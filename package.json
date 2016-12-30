@@ -1,0 +1,104 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "systango-bug-reporter@^1.0.0",
+        "scope": null,
+        "escapedName": "systango-bug-reporter",
+        "name": "systango-bug-reporter",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/stplmacmini6/Documents/Projects/DemoProjects/BugsNagProjectNew"
+    ]
+  ],
+  "_from": "systango-bug-reporter@latest",
+  "_id": "systango-bug-reporter@1.0.0",
+  "_inCache": true,
+  "_location": "/systango-bug-reporter",
+  "_nodeVersion": "6.2.0",
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/systango-bug-reporter-1.0.0.tgz_1481196698949_0.8741289849858731"
+  },
+  "_npmUser": {
+    "name": "stplmacmini6",
+    "email": "amourya@isystango.com"
+  },
+  "_npmVersion": "3.10.9",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "systango-bug-reporter",
+    "scope": null,
+    "escapedName": "systango-bug-reporter",
+    "name": "systango-bug-reporter",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/systango-bug-reporter/-/systango-bug-reporter-1.0.0.tgz",
+  "_shasum": "a916304c3ee6676e6ef8a6ecf3ee6c167654cf52",
+  "_shrinkwrap": null,
+  "_spec": "systango-bug-reporter",
+  "_where": "/Users/stplmacmini6/Documents/Projects/DemoProjects/BugsNagProjectNew",
+  "author": {
+    "name": "Akhilesh",
+    "email": "",
+    "url": ""
+  },
+  "dependencies": {
+    "react-native-sqlite-storage": "^3.1.2"
+  },
+  "description": "Listen to users click events on existing scope and store steps and run time uncaught exceptions to local or remote",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "a916304c3ee6676e6ef8a6ecf3ee6c167654cf52",
+    "tarball": "https://registry.npmjs.org/systango-bug-reporter/-/systango-bug-reporter-1.0.0.tgz"
+  },
+  "keywords": [
+    "react-component",
+    "react-native",
+    "ios",
+    "android",
+    "SystangoBugReporter",
+    "crash",
+    "bug",
+    "crash-report"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "stplmacmini6",
+      "email": "amourya@isystango.com"
+    }
+  ],
+  "name": "systango-bug-reporter",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "react-native": ">=0.18.0"
+  },
+  "readme": "ERROR: No README data found!",
+  "scripts": {
+    "test": "The error reporting app"
+  },
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+"
+  },
+  "rnpm": {
+    "android": {
+      "packageInstance": "new RNSystangoBugReporterManager(this)"
+    },
+    "ios": {
+      "project": "ios/RNSystangoBugReporter.xcodeproj"
+    }
+  }
+}
