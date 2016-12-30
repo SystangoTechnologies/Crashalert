@@ -22,7 +22,7 @@ for react-native < 0.29:
 
 or:
 
-#####Manually on iOS
+##### Manually on iOS
 
 1. Open your project in XCode, right click on `Libraries` and click `Add
    Files to "Your Project Name"` Look under `node_modules/systango-bug-reporter/iOS` and add `RNSystangoBugReporter.xcodeproj`.  [(Screenshot)]().
@@ -34,12 +34,13 @@ or:
    isn't, then add it. This is so XCode is able to find the headers that
    the `RNSystangoBugReporter` source files are referring to by pointing to the
    header files installed within the `react-native` `node_modules`
-   directory. [(Screenshot)]().
+   directory. [(Screenshot)]().`
 
 Then:
 
 
-- Whenever you want to use it within React code now you can: `import {Button} from 'systango-bug-reporter';`
+- Whenever you want to use it within React code now you can:
+`import {Button} from 'systango-bug-reporter';`
 
 
 
@@ -124,7 +125,7 @@ The following code you should include in your index.ios.js and index.android.js 
     Configuration.setIsSendOnRemote(false)   // <---- setting false will store information on local you can see the example project 
 ``
 
-##Note: In this version we didn't provide support to report crash and user actions on remote
+##Note: In this version we did not provide support to report crash and user actions on remote
 
 ### Simple
 
