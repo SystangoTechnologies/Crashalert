@@ -65,13 +65,13 @@ Then:
    or `android/src/main/java/com/{YOUR_APP_NAME}/MainApplication.java` for react-native >= 0.29 add:
    ```java
    //...
-   import com.example.rnsystangobugreportermanager.RNSystangoBugReporterManager; // <--- This!
+    import com.systango.rncrashreportermodule.RNCrashReporterModule; <---- This!
    //...
    @Override
    protected List<ReactPackage> getPackages() {
      return Arrays.<ReactPackage>asList(
        new MainReactPackage(),
-       new RNSystangoBugReporterManager(this) // <---- and This!
+       new RNCrashReporterModule(this) // <---- and This!
      );
 }
    ```
@@ -80,7 +80,7 @@ Then:
     ```java
     public class MainActivity extends ReactActivity {
 
-    public static Activity activity; // <---- and This!
+    public static Activity activity; // <----  This!
 
         /**
         * Returns the name of the main component registered from JavaScript.
@@ -104,7 +104,7 @@ Then:
     protected List<ReactPackage> getPackages() {
         return Arrays.<ReactPackage>asList(
             new MainReactPackage(),
-            new RNSystangoBugReporterManager(MainActivity.getActivity()) // <---- and This!
+            new RNCrashReporterModule(MainActivity.getActivity()) // <---- This!
     );
 
     //...
