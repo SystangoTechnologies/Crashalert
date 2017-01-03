@@ -1,4 +1,4 @@
-# systango-bug-reporter
+# rn-crash-reporter
 
 A reporter that stores users actions steps and runtime crashes info. You no longer need to change existing code, you just need to import our components in your js classes.
 
@@ -9,7 +9,7 @@ Version 1.0.0 supports react-native >= 0.18.0
 
 install Systango bug reporter as described below:
 
-- Run `npm install systango-bug-reporter --save`
+- Run `npm install rn-crash-reporter --save`
 
 
 You can try linking the project automatically for react-native >= 0.29:
@@ -25,7 +25,7 @@ or:
 ## Manually on iOS
 
 1. Open your project in XCode, right click on `Libraries` and click `Add
-   Files to "Your Project Name"` Look under `node_modules/systango-bug-reporter/iOS` and add `RNSystangoBugReporter.xcodeproj`.  [(Screenshot)]().
+   Files to "Your Project Name"` Look under `node_modules/rn-crash-reporter/iOS` and add `RNSystangoBugReporter.xcodeproj`.  [(Screenshot)]().
 2. Add `libRNSystangoBugReporter.a` to `Build Phases -> Link Binary With Libraries`
    [(Screenshot)]().
 3. Click on `RNSystangoBugReporter.xcodeproj` in `Libraries` and go the `Build
@@ -40,7 +40,7 @@ Then:
 
 
 - Whenever you want to use it within React code now you can:
-`import {Button} from 'systango-bug-reporter';`
+`import {Button} from 'rn-crash-reporter';`
 
 
 
@@ -49,15 +49,15 @@ Then:
 1. in `android/settings.gradle`
    ```java
    ...
-   include ':systango-bug-reporter'
-   project(':systango-bug-reporter').projectDir = new File(rootProject.projectDir, '../node_modules/systango-bug-reporter/android')
+   include ':rn-crash-reporter'
+   project(':rn-crash-reporter').projectDir = new File(rootProject.projectDir, '../node_modules/rn-crash-reporter/android')
    ```
 
 2. in `android/app/build.gradle` add:
    ```java
    dependencies {
        ...
-       compile project(':systango-bug-reporter')
+       compile project(':rn-crash-reporter')
    }
    ```
 
@@ -80,7 +80,7 @@ Then:
     ```java
     public class MainActivity extends ReactActivity {
 
-    public static Activity activity; <---- and This!
+    public static Activity activity; // <---- and This!
 
         /**
         * Returns the name of the main component registered from JavaScript.
@@ -88,11 +88,11 @@ Then:
         */
         @Override
         protected String getMainComponentName() {
-        activity = this;      <---- and This!
+        activity = this;      // <---- and This!
         return "Your_project_name";
     }
 
-    public static Activity getActivity() {  <---- and This!
+    public static Activity getActivity() {  // <---- and This!
         return activity;
     }
   }
@@ -117,7 +117,7 @@ The following code you should include in your index.ios.js and index.android.js 
 
 ```javascript
 
-    import {Configuration, BugReporter} from 'systango-bug-reporter'
+    import {Configuration, BugReporter} from 'rn-crash-reporter'
 
     //*> Configure BugReporter
     new BugReporter()
@@ -127,14 +127,14 @@ The following code you should include in your index.ios.js and index.android.js 
 
 ##Note: In this version we did not provide support to report crash and user actions on remote. It would come soon.
 
-## Sample
+### Sample
 
 The following code you can use something like this:
 
 
 ```javascript
 
-    import {Button} from 'systango-bug-reporter';
+    import {Button} from 'rn-crash-reporter';
 
     // Within your render function
     <Button style={styles.button} onPress={ ()=> this.pressLogin()}>
@@ -153,7 +153,7 @@ The following code you can use something like this:
 
     });
 ```
-## With new version of react native you can use button like this without any existing code changes
+### With new version of react native you can use button like this without any existing code changes
 ```javascript
     <Button title="LOG IN" style={styles.button} onPress={ ()=> this.pressLogin()} />
 ```
@@ -173,7 +173,7 @@ You can also use the SRNView component to capture onPress event on your custom c
 
 ```javascript
 
-    import {SRNView} from 'systango-bug-reporter';
+    import {SRNView} from 'rn-crash-reporter';
 
 
     // Within your render function
