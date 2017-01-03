@@ -1,4 +1,4 @@
-package com.example.rnsystangobugreportermanager;
+package com.systango.rncrashreportermodule;
 
 import android.app.Activity;
 import android.content.BroadcastReceiver;
@@ -23,18 +23,18 @@ import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.common.ReactConstants;
 import com.facebook.react.modules.core.DeviceEventManagerModule;
 
-public class RNSystangoBugReporterModule extends ReactContextBaseJavaModule {
+public class RNCrashReporter extends ReactContextBaseJavaModule {
 
     Activity currentActivity;
 
-    public RNSystangoBugReporterModule(ReactApplicationContext reactContext, Activity activity) {
+    public RNCrashReporter(ReactApplicationContext reactContext, Activity activity) {
         super(reactContext);
         currentActivity = activity;
     }
 
     @Override
     public String getName() {
-        return "RNSystangoBugReporter";
+        return "RNCrashReporter";
     }
 
 
@@ -44,14 +44,14 @@ public class RNSystangoBugReporterModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public void reload() {
-        Activity activity = getCurrentActivity();
+        Activity activity = getCurrentActivityInstance();
         Intent intent = activity.getIntent();
         activity.finish();
         activity.startActivity(intent);
     }
 
 
-    public Activity getCurrentActivity() {
+    public Activity getCurrentActivityInstance() {
         return currentActivity;
     }
 }

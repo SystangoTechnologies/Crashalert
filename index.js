@@ -3,17 +3,17 @@ import Button from './lib/Button'
 import TouchableOpacity from './lib/Button'
 import TouchableHighlight from './lib/Button'
 import TouchableNativeFeedback from './lib/Button'
-import SQLiteManager from './lib/SQLiteManager'
-import BugReporter from './lib/BugReporter'
+import CrashReporter from './lib/CrashReporter'
 import SRNView from './lib/SRNView'
+import SQLiteManager from './lib/SQLiteManager'
 
 export {
   Configuration,
+  CrashReporter,
   Button,
-  SQLiteManager,
-  BugReporter,
-  SRNView,
   TouchableOpacity,
   TouchableNativeFeedback,
-  TouchableHighlight
+  TouchableHighlight,
+  SRNView,
+  SQLiteManager
 };

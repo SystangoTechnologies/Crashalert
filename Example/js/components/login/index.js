@@ -6,7 +6,7 @@
  'use strict';
 
  import React, { Component, PropTypes, version, defaultProps } from 'react';
- import { DeviceEventEmitter, Dimensions, Image, ScrollView, Text, TouchableOpacity, Alert, StatusBar, Platform} from 'react-native';
+ import { DeviceEventEmitter, Dimensions, Image, ScrollView, Text, Alert, StatusBar, Platform} from 'react-native';
  import { Container, Content, InputGroup, Input, Icon, View, List, ListItem } from 'native-base';
  import styles from './styles';
  import SpinLoader from '../loaders/SpinLoader';
@@ -23,7 +23,7 @@
  import * as routeActions from '../../actions/route';
  import { Hoshi } from 'react-native-textinput-effects';
 
- import { Button} from 'systango-bug-reporter'
+ import { Button, TouchableOpacity } from 'rn-crash-reporter'
  import Orientation from 'react-native-orientation';
 
 
@@ -101,6 +101,7 @@
             <Button style={[styles.btn, {width:this.state.width - 70}]} onPress={ ()=> this.pressLogin()}>
                 LOG IN
             </Button>
+
             <Button style={[styles.ButtonBGViewStyle, {width:this.state.width - 70}]} textStyle={styles.text} onPress={ ()=> this.forgotPassword()} isBorder={false}>
                   Forgot your password?
             </Button>

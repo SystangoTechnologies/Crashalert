@@ -10,8 +10,7 @@
  import myTheme from '../../themes/base-theme';
  import { Container, Content, InputGroup, Input, Icon,  List, ListItem, Footer, Title, Header } from 'native-base';
  import styles from './styles';
- import {Button} from 'systango-bug-reporter'
- import {SRNView} from 'systango-bug-reporter'
+ import {SRNView, Button} from 'rn-crash-reporter'
  import PlayerCell from './PlayerCell'
  import ScreenService from '../Screen/screenService.js'
 

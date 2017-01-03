@@ -3,7 +3,6 @@ package com.bugsnagprojectnew;
 import android.app.Application;
 import android.util.Log;
 
-import com.example.rnsystangobugreportermanager.RNSystangoBugReporterManager;
 import com.facebook.react.ReactApplication;
 import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.ReactNativeHost;
@@ -13,6 +12,7 @@ import com.facebook.soloader.SoLoader;
 import com.github.yamill.orientation.OrientationPackage;
 import com.learnium.RNDeviceInfo.RNDeviceInfo;
 import com.react.rnspinkit.RNSpinkitPackage;
+import com.systango.rncrashreportermodule.RNCrashReporterModule;
 
 import org.pgsqlite.SQLitePluginPackage;
 
@@ -35,7 +35,7 @@ public class MainApplication extends Application implements ReactApplication {
               new RNDeviceInfo(),
               new OrientationPackage(MainActivity.getActivity()),
               new RNSpinkitPackage(),
-              new RNSystangoBugReporterManager(MainActivity.getActivity())
+              new RNCrashReporterModule(MainActivity.getActivity())
       );
     }
   };

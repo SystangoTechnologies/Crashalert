@@ -6,29 +6,29 @@
 //  Copyright © 2016 Systango. All rights reserved.
 //
 
-#import "RNSystangoBugReporter.h"
+#import "RNCrashReporter.h"
 
-@implementation RNSystangoBugReporter
+@implementation RNCrashReporter
 
-+ (RNSystangoBugReporter*)init
++ (RNCrashReporter*)init
 {
-    static RNSystangoBugReporter *sharedInstance = nil;
+    static RNCrashReporter *sharedInstance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        sharedInstance = [[RNSystangoBugReporter alloc] init];
+        sharedInstance = [[RNCrashReporter alloc] init];
     });
     return sharedInstance;
 }
 
 - (void)handleSoftJSExceptionWithMessage:(NSString *)message stack:(NSArray *)stack exceptionId:(NSNumber *)exceptionId{
-    if([RNSystangoBugReporter init]->block){
-        [RNSystangoBugReporter init]->block(@[message, stack]);
+    if([RNCrashReporter init]->block){
+        [RNCrashReporter init]->block(@[message, stack]);
     }
 }
 
 - (void)handleFatalJSExceptionWithMessage:(NSString *)message stack:(NSArray *)stack exceptionId:(NSNumber *)exceptionId{
-    if([RNSystangoBugReporter init]->block){
-        [RNSystangoBugReporter init]->block(@[message, stack]);
+    if([RNCrashReporter init]->block){
+        [RNCrashReporter init]->block(@[message, stack]);
     }
 }
 
@@ -36,7 +36,7 @@ RCT_EXPORT_MODULE();
 
 RCT_EXPORT_METHOD(setExceptionHandler:(RCTResponseSenderBlock)callback)
 {
-    [RNSystangoBugReporter init]->block = callback;
+    [RNCrashReporter init]->block = callback;
 }
 
 @end

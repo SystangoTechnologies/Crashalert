@@ -17,9 +17,7 @@
  import * as fetchRoute from '../../actions/route';
  import { connect } from 'react-redux';
 
- import {Button} from 'systango-bug-reporter'
-  import {MyButton} from 'systango-bug-reporter'
- import {SQLiteManager} from 'systango-bug-reporter'
+ import {Button} from 'rn-crash-reporter'
 
 
 var _this;
@@ -134,4 +132,3 @@ function bindActions(dispatch){
 }
 
 export default connect(mapStateToProps, bindActions)(Home);
-// <MyButton style={[styles.btn, {width:this.state.width - 70, marginTop: 30}]} onPress={ ()=> this.pressLogout()} title='LOG OUTING'/>

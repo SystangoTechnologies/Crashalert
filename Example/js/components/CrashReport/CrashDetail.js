@@ -10,7 +10,7 @@
  import myTheme from '../../themes/base-theme';
  import { Container, Content, InputGroup, Input, Icon,  List, ListItem, Footer, Title, Header } from 'native-base';
  import styles from './styles';
- import {Button} from 'systango-bug-reporter'
+ import {Button} from 'rn-crash-reporter'
  import ScreenService from '../Screen/screenService.js'
 
  import { bindActionCreators } from 'redux'

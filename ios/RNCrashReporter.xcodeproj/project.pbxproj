@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EDB25A441DF983210014EE03 /* RNSystangoBugReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB25A431DF983210014EE03 /* RNSystangoBugReporter.m */; };
-		EDB25A451DF983210014EE03 /* RNSystangoBugReporter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = EDB25A421DF983210014EE03 /* RNSystangoBugReporter.h */; };
+		EDB25A441DF983210014EE03 /* RNCrashReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB25A431DF983210014EE03 /* RNCrashReporter.m */; };
+		EDB25A451DF983210014EE03 /* RNCrashReporter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = EDB25A421DF983210014EE03 /* RNCrashReporter.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,16 +18,16 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				EDB25A451DF983210014EE03 /* RNSystangoBugReporter.h in CopyFiles */,
+				EDB25A451DF983210014EE03 /* RNCrashReporter.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		EDB25A3F1DF983210014EE03 /* libRNSystangoBugReporter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNSystangoBugReporter.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		EDB25A421DF983210014EE03 /* RNSystangoBugReporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNSystangoBugReporter.h; sourceTree = "<group>"; };
-		EDB25A431DF983210014EE03 /* RNSystangoBugReporter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNSystangoBugReporter.m; sourceTree = "<group>"; };
+		EDB25A3F1DF983210014EE03 /* libRNCrashReporter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNCrashReporter.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDB25A421DF983210014EE03 /* RNCrashReporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNCrashReporter.h; sourceTree = "<group>"; };
+		EDB25A431DF983210014EE03 /* RNCrashReporter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNCrashReporter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +44,7 @@
 		EDB25A361DF983210014EE03 = {
 			isa = PBXGroup;
 			children = (
-				EDB25A411DF983210014EE03 /* RNSystangoBugReporter */,
+				EDB25A411DF983210014EE03 /* RNCrashReporter */,
 				EDB25A401DF983210014EE03 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,26 +52,27 @@
 		EDB25A401DF983210014EE03 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EDB25A3F1DF983210014EE03 /* libRNSystangoBugReporter.a */,
+				EDB25A3F1DF983210014EE03 /* libRNCrashReporter.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EDB25A411DF983210014EE03 /* RNSystangoBugReporter */ = {
+		EDB25A411DF983210014EE03 /* RNCrashReporter */ = {
 			isa = PBXGroup;
 			children = (
-				EDB25A421DF983210014EE03 /* RNSystangoBugReporter.h */,
-				EDB25A431DF983210014EE03 /* RNSystangoBugReporter.m */,
+				EDB25A421DF983210014EE03 /* RNCrashReporter.h */,
+				EDB25A431DF983210014EE03 /* RNCrashReporter.m */,
 			);
-			path = RNSystangoBugReporter;
+			name = RNCrashReporter;
+			path = RNCrashReporter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EDB25A3E1DF983210014EE03 /* RNSystangoBugReporter */ = {
+		EDB25A3E1DF983210014EE03 /* RNCrashReporter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EDB25A481DF983210014EE03 /* Build configuration list for PBXNativeTarget "RNSystangoBugReporter" */;
+			buildConfigurationList = EDB25A481DF983210014EE03 /* Build configuration list for PBXNativeTarget "RNCrashReporter" */;
 			buildPhases = (
 				EDB25A3B1DF983210014EE03 /* Sources */,
 				EDB25A3C1DF983210014EE03 /* Frameworks */,
@@ -81,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = RNSystangoBugReporter;
-			productName = RNSystangoBugReporter;
-			productReference = EDB25A3F1DF983210014EE03 /* libRNSystangoBugReporter.a */;
+			name = RNCrashReporter;
+			productName = RNCrashReporter;
+			productReference = EDB25A3F1DF983210014EE03 /* libRNCrashReporter.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +103,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EDB25A3A1DF983210014EE03 /* Build configuration list for PBXProject "RNSystangoBugReporter" */;
+			buildConfigurationList = EDB25A3A1DF983210014EE03 /* Build configuration list for PBXProject "RNCrashReporter" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -114,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EDB25A3E1DF983210014EE03 /* RNSystangoBugReporter */,
+				EDB25A3E1DF983210014EE03 /* RNCrashReporter */,
 			);
 		};
 /* End PBXProject section */
@@ -124,7 +125,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDB25A441DF983210014EE03 /* RNSystangoBugReporter.m in Sources */,
+				EDB25A441DF983210014EE03 /* RNCrashReporter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +257,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EDB25A3A1DF983210014EE03 /* Build configuration list for PBXProject "RNSystangoBugReporter" */ = {
+		EDB25A3A1DF983210014EE03 /* Build configuration list for PBXProject "RNCrashReporter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EDB25A461DF983210014EE03 /* Debug */,
@@ -265,7 +266,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EDB25A481DF983210014EE03 /* Build configuration list for PBXNativeTarget "RNSystangoBugReporter" */ = {
+		EDB25A481DF983210014EE03 /* Build configuration list for PBXNativeTarget "RNCrashReporter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EDB25A491DF983210014EE03 /* Debug */,

@@ -2,10 +2,10 @@
   "_args": [
     [
       {
-        "raw": "systango-bug-reporter@^1.0.0",
+        "raw": "rn-crash-reporter@^1.0.0",
         "scope": null,
-        "escapedName": "systango-bug-reporter",
-        "name": "systango-bug-reporter",
+        "escapedName": "rn-crash-reporter",
+        "name": "rn-crash-reporter",
         "rawSpec": "",
         "spec": "latest",
         "type": "tag"
@@ -13,14 +13,14 @@
       "/Users/stplmacmini6/Documents/Projects/DemoProjects/BugsNagProjectNew"
     ]
   ],
-  "_from": "systango-bug-reporter@latest",
-  "_id": "systango-bug-reporter@1.0.0",
+  "_from": "rn-crash-reporter@latest",
+  "_id": "rn-crash-reporter@1.0.0",
   "_inCache": true,
-  "_location": "/systango-bug-reporter",
+  "_location": "/rn-crash-reporter",
   "_nodeVersion": "6.2.0",
   "_npmOperationalInternal": {
     "host": "packages-18-east.internal.npmjs.com",
-    "tmp": "tmp/systango-bug-reporter-1.0.0.tgz_1481196698949_0.8741289849858731"
+    "tmp": "tmp/rn-crash-reporter-1.0.0.tgz_1481196698949_0.8741289849858731"
   },
   "_npmUser": {
     "name": "stplmacmini6",
@@ -29,10 +29,10 @@
   "_npmVersion": "3.10.9",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "systango-bug-reporter",
+    "raw": "rn-crash-reporter",
     "scope": null,
-    "escapedName": "systango-bug-reporter",
-    "name": "systango-bug-reporter",
+    "escapedName": "rn-crash-reporter",
+    "name": "rn-crash-reporter",
     "rawSpec": "",
     "spec": "latest",
     "type": "tag"
@@ -41,10 +41,10 @@
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/systango-bug-reporter/-/systango-bug-reporter-1.0.0.tgz",
+  "_resolved": "https://registry.npmjs.org/rn-crash-reporter/-/rn-crash-reporter-1.0.0.tgz",
   "_shasum": "a916304c3ee6676e6ef8a6ecf3ee6c167654cf52",
   "_shrinkwrap": null,
-  "_spec": "systango-bug-reporter",
+  "_spec": "rn-crash-reporter",
   "_where": "/Users/stplmacmini6/Documents/Projects/DemoProjects/BugsNagProjectNew",
   "author": {
     "name": "Akhilesh",
@@ -59,17 +59,18 @@
   "directories": {},
   "dist": {
     "shasum": "a916304c3ee6676e6ef8a6ecf3ee6c167654cf52",
-    "tarball": "https://registry.npmjs.org/systango-bug-reporter/-/systango-bug-reporter-1.0.0.tgz"
+    "tarball": "https://registry.npmjs.org/rn-crash-reporter/-/rn-crash-reporter-1.0.0.tgz"
   },
   "keywords": [
     "react-component",
     "react-native",
     "ios",
     "android",
-    "SystangoBugReporter",
+    "BugReporter",
     "crash",
     "bug",
-    "crash-report"
+    "crash-report",
+    "crash reporter"
   ],
   "license": "MIT",
   "main": "index.js",
@@ -79,7 +80,7 @@
       "email": "amourya@isystango.com"
     }
   ],
-  "name": "systango-bug-reporter",
+  "name": "rn-crash-reporter",
   "optionalDependencies": {},
   "peerDependencies": {
     "react-native": ">=0.18.0"
@@ -95,10 +96,10 @@
   },
   "rnpm": {
     "android": {
-      "packageInstance": "new RNSystangoBugReporterManager(this)"
+      "packageInstance": "new RNSCrashReporterModule(this)"
     },
     "ios": {
-      "project": "ios/RNSystangoBugReporter.xcodeproj"
+      "project": "ios/RNCrashReporter.xcodeproj"
     }
   }
 }

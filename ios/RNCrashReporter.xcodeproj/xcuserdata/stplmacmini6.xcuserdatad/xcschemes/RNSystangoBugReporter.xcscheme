@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EDB25A3E1DF983210014EE03"
-               BuildableName = "libRNSystangoBugReporter.a"
-               BlueprintName = "RNSystangoBugReporter"
-               ReferencedContainer = "container:RNSystangoBugReporter.xcodeproj">
+               BuildableName = "libRNCrashReporter.a"
+               BlueprintName = "RNCrashReporter"
+               ReferencedContainer = "container:RNCrashReporter.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,9 +46,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EDB25A3E1DF983210014EE03"
-            BuildableName = "libRNSystangoBugReporter.a"
-            BlueprintName = "RNSystangoBugReporter"
-            ReferencedContainer = "container:RNSystangoBugReporter.xcodeproj">
+            BuildableName = "libRNCrashReporter.a"
+            BlueprintName = "RNCrashReporter"
+            ReferencedContainer = "container:RNCrashReporter.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -64,9 +64,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EDB25A3E1DF983210014EE03"
-            BuildableName = "libRNSystangoBugReporter.a"
-            BlueprintName = "RNSystangoBugReporter"
-            ReferencedContainer = "container:RNSystangoBugReporter.xcodeproj">
+            BuildableName = "libRNCrashReporter.a"
+            BlueprintName = "RNCrashReporter"
+            ReferencedContainer = "container:RNCrashReporter.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

@@ -10,10 +10,9 @@
  import myTheme from '../../themes/base-theme';
  import { Container, Content, InputGroup, Input, Icon,  List, ListItem, Footer, Title, Header } from 'native-base';
  import styles from './styles';
- import {Button} from 'systango-bug-reporter'
- import {SRNView} from 'systango-bug-reporter'
+ import {SRNView, Button} from 'rn-crash-reporter'
  import ScreenService from '../Screen/screenService.js'
- import {SQLiteManager} from 'systango-bug-reporter'
+ import {SQLiteManager} from 'rn-crash-reporter'
 
  import { bindActionCreators } from 'redux'
  import * as authActions from '../../actions/user';

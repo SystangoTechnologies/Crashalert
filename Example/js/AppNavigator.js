@@ -17,7 +17,7 @@ import CrashReport from './components/CrashReport/';
 import CrashDetail from './components/CrashReport/CrashDetail';
 
 
-import {Configuration, BugReporter} from 'systango-bug-reporter'
+import {Configuration} from 'rn-crash-reporter'
 
 import { statusBarColor } from "./themes/base-theme";
 
@@ -78,9 +78,8 @@ class AppNavigator extends Component {
     componentDidMount() {
 
       //*> Configure BugReporter
-      new BugReporter()
+      Configuration.setHostURL('http://colon.com');
       Configuration.setIsReportCrash(true)
-      Configuration.setIsSendOnRemote(false)
 
 
         globalNav.navigator = this._navigator;

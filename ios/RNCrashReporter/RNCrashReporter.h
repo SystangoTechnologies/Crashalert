@@ -10,10 +10,10 @@
 #import "RCTBridgeModule.h"
 #import "RCTExceptionsManager.h"
 
-@interface RNSystangoBugReporter : NSObject<RCTBridgeModule, RCTExceptionsManagerDelegate>
+@interface RNCrashReporter : NSObject<RCTBridgeModule, RCTExceptionsManagerDelegate>
 {
     RCTResponseSenderBlock block;
 }
-+ (RNSystangoBugReporter*)init;
++ (RNCrashReporter*)init;
 @property (nonatomic, strong) id<RCTExceptionsManagerDelegate> delegate;
 @end
