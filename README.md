@@ -47,14 +47,14 @@ Then:
 ## Manually on Android
 
 1. in `android/settings.gradle`
-   ```
+   ```java
    ...
    include ':systango-bug-reporter'
    project(':systango-bug-reporter').projectDir = new File(rootProject.projectDir, '../node_modules/systango-bug-reporter/android')
    ```
 
 2. in `android/app/build.gradle` add:
-   ```
+   ```java
    dependencies {
        ...
        compile project(':systango-bug-reporter')
@@ -154,14 +154,17 @@ The following code you can use something like this:
     });
 ```
 ## With new version of react native you can use button like this without any existing code changes
-
+```javascript
     <Button title="LOG IN" style={styles.button} onPress={ ()=> this.pressLogin()} />
+```
 
 ## Additional props
 
+```javascript
     <Button style={styles.button} onPress={ ()=> this.pressLogin()} isBorder={false}>
         LOG IN
     </Button>
+```
 
 
 ## Additional component
@@ -190,9 +193,9 @@ You can also use the SRNView component to capture onPress event on your custom c
         </SRNView>
         )
     }
-
-here actionOn props not required, you can pass this props to associate extra info about your cell. Also you can use the following component TouchableOpacity, TouchableNativeFeedback and TouchableHighlight
 ```
+here actionOn props not required, you can pass this props to associate extra info about your cell. Also you can use the following component TouchableOpacity, TouchableNativeFeedback and TouchableHighlight
+
 
 ## License
 
