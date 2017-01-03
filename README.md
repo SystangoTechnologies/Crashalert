@@ -74,10 +74,10 @@ Then:
        new RNSystangoBugReporterManager(this) // <---- and This!
      );
 }
-   ``
+   ```
  if you are using react-native >= 0.29 then you should create the static instance of Activity in MainActivity class like:
 
-    ```
+    ```java
     public class MainActivity extends ReactActivity {
 
     public static Activity activity; <---- and This!
@@ -109,7 +109,7 @@ Then:
 
     //...
 
-    ``
+    ```
 
 ## Examples
 
@@ -152,7 +152,7 @@ The following code you can use something like this:
     }
 
     });
-``
+```
 ## With new version of react native you can use button like this without any existing code changes
 
     <Button title="LOG IN" style={styles.button} onPress={ ()=> this.pressLogin()} />
@@ -192,7 +192,7 @@ You can also use the SRNView component to capture onPress event on your custom c
     }
 
 here actionOn props not required, you can pass this props to associate extra info about your cell. Also you can use the following component TouchableOpacity, TouchableNativeFeedback and TouchableHighlight
-``
+```
 
 ## License
 
