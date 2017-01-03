@@ -14,15 +14,15 @@ install Systango bug reporter as described below:
 
 You can try linking the project automatically for react-native >= 0.29:
 
-`$ react-native link`
+- Run `$ react-native link`
 
 for react-native < 0.29:
 
-`$ rnpm link`
+- Run `$ rnpm link`
 
 or:
 
-##### Manually on iOS
+## Manually on iOS
 
 1. Open your project in XCode, right click on `Libraries` and click `Add
    Files to "Your Project Name"` Look under `node_modules/systango-bug-reporter/iOS` and add `RNSystangoBugReporter.xcodeproj`.  [(Screenshot)]().
@@ -44,7 +44,7 @@ Then:
 
 
 
-#### Manually on Android
+## Manually on Android
 
 1. in `android/settings.gradle`
    ```
@@ -123,11 +123,11 @@ The following code you should include in your index.ios.js and index.android.js 
     new BugReporter()
     Configuration.setIsReportCrash(true)     // <---- setting true will report users actions and steps
     Configuration.setIsSendOnRemote(false)   // <---- setting false will store information on local you can see the example project 
-``
+ ```
 
-##Note: In this version we did not provide support to report crash and user actions on remote
+##Note: In this version we did not provide support to report crash and user actions on remote. It would come soon.
 
-### Simple
+## Sample
 
 The following code you can use something like this:
 
@@ -153,18 +153,18 @@ The following code you can use something like this:
 
     });
 ``
-### With new version of react native you can use button like this without any existing code changes
+## With new version of react native you can use button like this without any existing code changes
 
     <Button title="LOG IN" style={styles.button} onPress={ ()=> this.pressLogin()} />
 
-### Additional props
+## Additional props
 
     <Button style={styles.button} onPress={ ()=> this.pressLogin()} isBorder={false}>
         LOG IN
     </Button>
 
 
-### Additional component
+## Additional component
 
 You can also use the SRNView component to capture onPress event on your custom cell of ListView like following code:
 
@@ -194,6 +194,6 @@ You can also use the SRNView component to capture onPress event on your custom c
 here actionOn props not required, you can pass this props to associate extra info about your cell. Also you can use the following component TouchableOpacity, TouchableNativeFeedback and TouchableHighlight
 ``
 
-### License
+## License
 
 License is MIT
