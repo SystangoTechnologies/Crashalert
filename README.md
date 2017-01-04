@@ -110,6 +110,43 @@ Then:
     //...
 
     ```
+## In the iOS, add the following code in AppDelegate didFinishLaunchingWithOptions method
+
+```objectivec
+
+    #import "RNCrashReporter.h" // <---- This!
+
+    NSURL *jsCodeLocation;
+
+    jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.ios.bundle?platform=ios&dev=true"];
+    //jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
+
+    //*> Initialize native module shared instance
+    RNCrashReporter *rnSBR = [RNCrashReporter init];
+
+    //*> Create ReactNative bridge
+    RCTBridge *bridge = [[RCTBridge alloc] initWithBundleURL:jsCodeLocation moduleProvider:^NSArray<id<RCTBridgeModule>> *{
+    rnSBR.delegate = rnSBR;
+
+    //*> Initialize RCTExceptionsManager with custom Exception Delegate
+    id<RCTExceptionsManagerDelegate> customDelegate = rnSBR.delegate;
+    RCTExceptionsManager *obj = [[RCTExceptionsManager alloc] init];
+
+    return @[[obj initWithDelegate:customDelegate]];
+
+    } launchOptions:launchOptions];
+
+
+    RCTRootView *rootView = [[RCTRootView alloc] initWithBridge:bridge moduleName:@"YourProjectName" initialProperties:nil];
+    rootView.backgroundColor = [[UIColor alloc] initWithRed:1.0f green:1.0f blue:1.0f alpha:1];
+
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    UIViewController *rootViewController = [UIViewController new];
+    rootViewController.view = rootView;
+    self.window.rootViewController = rootViewController;
+    [self.window makeKeyAndVisible];
+
+```
 
 ## Examples
 
@@ -120,7 +157,6 @@ The following code you should include in your index.ios.js and index.android.js 
     import {Configuration, BugReporter} from 'rn-crash-reporter'
 
     //*> Configure BugReporter
-    new BugReporter()
     Configuration.setIsReportCrash(true)     // <---- setting true will report users actions and steps
     Configuration.setIsSendOnRemote(false)   // <---- setting false will store information on local you can see the example project 
  ```
