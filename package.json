@@ -1,72 +1,24 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "rn-crash-reporter@^1.0.0",
-        "scope": null,
-        "escapedName": "rn-crash-reporter",
-        "name": "rn-crash-reporter",
-        "rawSpec": "",
-        "spec": "latest",
-        "type": "tag"
-      },
-      "/Users/stplmacmini6/Documents/Projects/DemoProjects/BugsNagProjectNew"
-    ]
-  ],
-  "_from": "rn-crash-reporter@latest",
-  "_id": "rn-crash-reporter@1.0.0",
-  "_inCache": true,
-  "_location": "/rn-crash-reporter",
-  "_nodeVersion": "6.2.0",
-  "_npmOperationalInternal": {
-    "host": "packages-18-east.internal.npmjs.com",
-    "tmp": "tmp/rn-crash-reporter-1.0.0.tgz_1481196698949_0.8741289849858731"
+  "name": "rn-crash-reporter",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "react-native": ">=0.18.0"
   },
-  "_npmUser": {
-    "name": "stplmacmini6",
-    "email": "amourya@isystango.com"
-  },
-  "_npmVersion": "3.10.9",
-  "_phantomChildren": {},
-  "_requested": {
-    "raw": "rn-crash-reporter",
-    "scope": null,
-    "escapedName": "rn-crash-reporter",
-    "name": "rn-crash-reporter",
-    "rawSpec": "",
-    "spec": "latest",
-    "type": "tag"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/rn-crash-reporter/-/rn-crash-reporter-1.0.0.tgz",
-  "_shasum": "a916304c3ee6676e6ef8a6ecf3ee6c167654cf52",
-  "_shrinkwrap": null,
-  "_spec": "rn-crash-reporter",
-  "_where": "/Users/stplmacmini6/Documents/Projects/DemoProjects/BugsNagProjectNew",
+  "version": "1.0.0",
   "author": {
-    "name": "Akhilesh",
-    "email": "",
-    "url": ""
+    "name": "Sytango Technologies",
+    "email": "engineering@systango.com"
   },
   "dependencies": {
-    "react-native-sqlite-storage": "^3.1.2"
+    "react-native-sqlite-storage": "^3.1.2",
+    "react-native-device-info": "^0.9.7"
   },
-  "description": "Listen to users click events on existing scope and store steps and run time uncaught exceptions to local or remote",
-  "devDependencies": {},
-  "directories": {},
-  "dist": {
-    "shasum": "a916304c3ee6676e6ef8a6ecf3ee6c167654cf52",
-    "tarball": "https://registry.npmjs.org/rn-crash-reporter/-/rn-crash-reporter-1.0.0.tgz"
-  },
+  "description": "Library of react native components which allow reporting steps leading to an application crash",
   "keywords": [
     "react-component",
     "react-native",
     "ios",
     "android",
-    "BugReporter",
     "crash",
     "bug",
     "crash-report",
@@ -76,24 +28,15 @@
   "main": "index.js",
   "maintainers": [
     {
-      "name": "stplmacmini6",
-      "email": "amourya@isystango.com"
+      "name": "Sytango Technologies",
+      "email": "engineering@systango.com"
     }
   ],
-  "name": "rn-crash-reporter",
-  "optionalDependencies": {},
-  "peerDependencies": {
-    "react-native": ">=0.18.0"
-  },
-  "readme": "ERROR: No README data found!",
-  "scripts": {
-    "test": "The error reporting app"
-  },
-  "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "git+"
+    "url": "git+https://github.com/sytango-technologies/rn-crash-reporter"
   },
+  "homepage": "https://github.com/sytango-technologies/rn-crash-reporter/wiki",
   "rnpm": {
     "android": {
       "packageInstance": "new RNSCrashReporterModule(this)"

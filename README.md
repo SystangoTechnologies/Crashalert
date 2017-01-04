@@ -1,6 +1,6 @@
 # rn-crash-reporter
 
-A reporter that stores users actions steps and runtime crashes info. You no longer need to change existing code, you just need to import our components in your js classes.
+A reporter that stores user actions step and runtime crashes info. You no longer need to change existing code, you just need to import our components in your js classes.
 
 Version 1.0.0 supports react-native >= 0.18.0
 
@@ -154,7 +154,7 @@ The following code you should include in your index.ios.js and index.android.js 
 
 ```javascript
 
-    import {Configuration, BugReporter} from 'rn-crash-reporter'
+    import {Configuration} from 'rn-crash-reporter'
 
     //*> Configure BugReporter
     Configuration.setHostURL('Your server url');
