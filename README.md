@@ -150,13 +150,13 @@ Then:
 
 ## Examples
 
-The following code you should include in your index.ios.js and index.android.js in componentWillMount() method. This is required configuration for bug reporter. If you are using Redux then you can add this configuration on any initial component class.
+The following code you should include in your index.ios.js and index.android.js in componentWillMount() method. This is required configuration for crash reporter. If you are using Redux then you can add this configuration on any initial component class.
 
 ```javascript
 
-    import {Configuration} from 'rn-crash-reporter'
+    import {Configuration} from 'rn-crash-reporter' // <---- This!
 
-    //*> Configure Crash Reporter
+    //*> Configure Crash Reporter                   // <---- This!
     Configuration.setHostURL('Your server url');
     Configuration.setIsReportCrash(true)     // <---- setting true will report users actions and steps on host
  ```
