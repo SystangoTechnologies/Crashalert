@@ -157,11 +157,9 @@ The following code you should include in your index.ios.js and index.android.js 
     import {Configuration, BugReporter} from 'rn-crash-reporter'
 
     //*> Configure BugReporter
-    Configuration.setIsReportCrash(true)     // <---- setting true will report users actions and steps
-    Configuration.setIsSendOnRemote(false)   // <---- setting false will store information on local you can see the example project 
+    Configuration.setHostURL('Your server url');
+    Configuration.setIsReportCrash(true)     // <---- setting true will report users actions and steps on host
  ```
-
-##Note: In this version we did not provide support to report crash and user actions on remote. It would come soon.
 
 ### Sample
 
