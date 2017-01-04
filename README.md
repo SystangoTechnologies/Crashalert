@@ -156,7 +156,7 @@ The following code you should include in your index.ios.js and index.android.js 
 
     import {Configuration} from 'rn-crash-reporter'
 
-    //*> Configure BugReporter
+    //*> Configure Crash Reporter
     Configuration.setHostURL('Your server url');
     Configuration.setIsReportCrash(true)     // <---- setting true will report users actions and steps on host
  ```
