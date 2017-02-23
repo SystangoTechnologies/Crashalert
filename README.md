@@ -105,9 +105,10 @@ Then:
     //...
 
     ```
-### You should follow Node server and Web client installation for rn-crash-reporter [here](https://github.com/sytango-technologies/rn-crash-viewer)
 
-### The following code you should include in your index.ios.js and index.android.js in componentWillMount() method. This is required configuration for crash reporter. If you are using Redux then you can add this configuration on any initial component class.
+###You should follow Node server and Web client installation for rn-crash-reporter [here](https://github.com/sytango-technologies/rn-crash-viewer)
+
+ The following code you should include in your index.ios.js and index.android.js in componentWillMount() method. This is required configuration for crash reporter. If you are using Redux then you can add this configuration on any initial component class.
 
 ```javascript
 
