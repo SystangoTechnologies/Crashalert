@@ -39,11 +39,6 @@ or:
 Then:
 
 
-- Whenever you want to use it within React code now you can:
-`import {Button} from 'rn-crash-reporter';`
-
-
-
 ## Manually on Android
 
 1. in `android/settings.gradle`
@@ -110,57 +105,22 @@ Then:
     //...
 
     ```
-## In the iOS, add the following code in AppDelegate didFinishLaunchingWithOptions method
+### You should follow Node server and Web client installation for rn-crash-reporter [here](https://github.com/sytango-technologies/rn-crash-viewer)
 
-```objectivec
-
-    #import "RNCrashReporter.h" // <---- This!
-
-    NSURL *jsCodeLocation;
-
-    jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.ios.bundle?platform=ios&dev=true"];
-    //jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
-
-    //*> Initialize native module shared instance
-    RNCrashReporter *rnSBR = [RNCrashReporter init];
-
-    //*> Create ReactNative bridge
-    RCTBridge *bridge = [[RCTBridge alloc] initWithBundleURL:jsCodeLocation moduleProvider:^NSArray<id<RCTBridgeModule>> *{
-    rnSBR.delegate = rnSBR;
-
-    //*> Initialize RCTExceptionsManager with custom Exception Delegate
-    id<RCTExceptionsManagerDelegate> customDelegate = rnSBR.delegate;
-    RCTExceptionsManager *obj = [[RCTExceptionsManager alloc] init];
-
-    return @[[obj initWithDelegate:customDelegate]];
-
-    } launchOptions:launchOptions];
-
-
-    RCTRootView *rootView = [[RCTRootView alloc] initWithBridge:bridge moduleName:@"YourProjectName" initialProperties:nil];
-    rootView.backgroundColor = [[UIColor alloc] initWithRed:1.0f green:1.0f blue:1.0f alpha:1];
-
-    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    UIViewController *rootViewController = [UIViewController new];
-    rootViewController.view = rootView;
-    self.window.rootViewController = rootViewController;
-    [self.window makeKeyAndVisible];
-
-```
-
-## Examples
-
-The following code you should include in your index.ios.js and index.android.js in componentWillMount() method. This is required configuration for crash reporter. If you are using Redux then you can add this configuration on any initial component class.
+### The following code you should include in your index.ios.js and index.android.js in componentWillMount() method. This is required configuration for crash reporter. If you are using Redux then you can add this configuration on any initial component class.
 
 ```javascript
 
-    import {Configuration} from 'rn-crash-reporter' // <---- This!
+    import { CrashReporter, Configuration } from 'rn-crash-reporter'; //  <------- This
 
     //*> Configure Crash Reporter                   // <---- This!
-    Configuration.setHostURL('Your server url');
+    Configuration.setHostURL('Your server url or Local server url');
     Configuration.setIsReportCrash(true)     // <---- setting true will report users actions and steps on host
+    new CrashReporter()
+
  ```
 
+    
 ### Sample
 
 The following code you can use something like this:

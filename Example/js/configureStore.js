@@ -25,7 +25,7 @@ function errorHandler(error, getState, lastAction, dispatch) {
  	const enhancer = compose(
  		applyMiddleware(thunk, promise),
  		devTools({
- 	     	name: 'BugsNagProjectNew', realtime: true
+ 	     	name: 'RNCrashExample', realtime: true
  	    }),
  	);
 

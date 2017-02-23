@@ -6,6 +6,7 @@ import android.content.res.Configuration;
 
 import com.facebook.react.ReactActivity;
 import com.systango.rncrashreportermodule.RNCrashReporterModule;
+import com.systango.rncrashreportermodule.RNCrashReporterModule;
 import com.learnium.RNDeviceInfo.RNDeviceInfo;
 import com.github.yamill.orientation.OrientationPackage;
 import com.react.rnspinkit.RNSpinkitPackage;

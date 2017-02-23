@@ -9,4 +9,4 @@
  import Setup from './js/setup'
 
  StatusBar.setBarStyle('light-content');
- AppRegistry.registerComponent('BugsNagProjectNew', Setup);
+ AppRegistry.registerComponent('RNCrashExample', Setup);

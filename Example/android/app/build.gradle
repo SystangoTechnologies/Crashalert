@@ -126,6 +126,7 @@ android {
 }
 
 dependencies {
+    compile project(':rn-crash-reporter')
     compile project(':systango-bug-reporter')
     compile project(':react-native-device-info')
     compile project(':react-native-orientation')

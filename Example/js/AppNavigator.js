@@ -17,7 +17,7 @@ import CrashReport from './components/CrashReport/';
 import CrashDetail from './components/CrashReport/CrashDetail';
 
 
-import {Configuration} from 'rn-crash-reporter'
+import { CrashReporter, Configuration } from 'rn-crash-reporter'; //  <------- This
 
 import { statusBarColor } from "./themes/base-theme";
 
@@ -70,17 +70,14 @@ class AppNavigator extends Component {
         super(props);
         _this=this;
         navObj = this;
-
-
-
     }
 
     componentDidMount() {
 
-      //*> Configure BugReporter
-      Configuration.setHostURL('http://colon.com');
+      //*> Configure Crash Reporter
+      Configuration.setHostURL("http://127.0.0.1:8000");
       Configuration.setIsReportCrash(true)
-
+      new CrashReporter()
 
         globalNav.navigator = this._navigator;
 
@@ -98,9 +95,6 @@ class AppNavigator extends Component {
                 return true;
             }
         });
-
-
-
     }
 
     popRoute() {

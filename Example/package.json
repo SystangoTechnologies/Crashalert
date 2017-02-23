@@ -1,5 +1,5 @@
 {
-  "name": "BugsNagProjectNew",
+  "name": "RNCrashExample",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -21,6 +21,7 @@
     "redux-form": "^6.0.5",
     "redux-persist": "^3.2.2",
     "redux-thunk": "^2.1.0",
+    "rn-crash-reporter": "^1.0.0",
     "systango-bug-reporter": "^1.0.0"
   },
   "devDependencies": {
