@@ -12,7 +12,8 @@
 
 @interface RNCrashReporter : NSObject<RCTBridgeModule, RCTExceptionsManagerDelegate>
 {
-    RCTResponseSenderBlock block;
+    int deviceID;
+    NSString *DBName;
 }
 + (RNCrashReporter*)init;
 @property (nonatomic, strong) id<RCTExceptionsManagerDelegate> delegate;

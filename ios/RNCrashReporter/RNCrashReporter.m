@@ -7,6 +7,8 @@
 //
 
 #import "RNCrashReporter.h"
+//#import "SQLite/SQLite.h"
+//#import <SQLite/SQLiteResult.h>
 
 @implementation RNCrashReporter
 
@@ -14,6 +16,7 @@
 {
     static RNCrashReporter *sharedInstance = nil;
     static dispatch_once_t onceToken;
+    
     dispatch_once(&onceToken, ^{
         sharedInstance = [[RNCrashReporter alloc] init];
     });
@@ -21,22 +24,22 @@
 }
 
 - (void)handleSoftJSExceptionWithMessage:(NSString *)message stack:(NSArray *)stack exceptionId:(NSNumber *)exceptionId{
-    if([RNCrashReporter init]->block){
-        [RNCrashReporter init]->block(@[message, stack]);
-    }
+    
 }
 
 - (void)handleFatalJSExceptionWithMessage:(NSString *)message stack:(NSArray *)stack exceptionId:(NSNumber *)exceptionId{
-    if([RNCrashReporter init]->block){
-        [RNCrashReporter init]->block(@[message, stack]);
-    }
+       
 }
+
 
 RCT_EXPORT_MODULE();
 
-RCT_EXPORT_METHOD(setExceptionHandler:(RCTResponseSenderBlock)callback)
+RCT_EXPORT_METHOD(setDBAndDeviceID:(NSString *)dbName deviceId:(NSString *)deviceId)
 {
-    [RNCrashReporter init]->block = callback;
+    [RNCrashReporter init]->deviceID = [deviceId intValue];
+    [RNCrashReporter init]->DBName = dbName;
 }
+
+
 
 @end
