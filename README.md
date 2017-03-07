@@ -2,7 +2,7 @@
 
 A reporter that stores user actions step and runtime crashes info. You no longer need to change existing code, you just need to import our components in your js classes.
 
-Version 1.0.5 supports react-native >= 0.18.0
+Version 1.0.7 supports react-native >= 0.18.0
 
 ## Add it to your project
 
