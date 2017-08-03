@@ -58,6 +58,7 @@ Then:
 
 3. and finally, in `android/src/main/java/com/{YOUR_APP_NAME}/MainActivity.java` for react-native < 0.29,
    or `android/src/main/java/com/{YOUR_APP_NAME}/MainApplication.java` for react-native >= 0.29 add:
+
    ```java
    //...
     import com.systango.rncrashreportermodule.RNCrashReporterModule; <---- This!
@@ -68,11 +69,13 @@ Then:
        new MainReactPackage(),
        new RNCrashReporterModule(this) // <---- and This!
      );
-}
-   ```
+    }
+    ```
+
  if you are using react-native >= 0.29 then you should create the static instance of Activity in MainActivity class like:
 
     ```java
+
     public class MainActivity extends ReactActivity {
 
     public static Activity activity; // <----  This!
@@ -101,9 +104,6 @@ Then:
             new MainReactPackage(),
             new RNCrashReporterModule(MainActivity.getActivity()) // <---- This!
     );
-
-    //...
-
     ```
 
 ###You should follow Node server and Web client installation for rn-crash-reporter [here](https://github.com/sytango-technologies/rn-crash-viewer)
@@ -120,7 +120,6 @@ Then:
     new CrashReporter()
 
  ```
-
     
 ### Sample
 
@@ -148,6 +147,7 @@ The following code you can use something like this:
 
     });
 ```
+
 ### With new version of react native you can use button like this without any existing code changes
 ```javascript
     <Button title="LOG IN" style={styles.button} onPress={ ()=> this.pressLogin()} />
@@ -160,7 +160,6 @@ The following code you can use something like this:
         LOG IN
     </Button>
 ```
-
 
 ## Additional component
 
@@ -189,6 +188,7 @@ You can also use the SRNView component to capture onPress event on your custom c
         )
     }
 ```
+
 here actionOn props not required, you can pass this props to associate extra info about your cell. Also you can use the following component TouchableOpacity, TouchableNativeFeedback and TouchableHighlight
 
 

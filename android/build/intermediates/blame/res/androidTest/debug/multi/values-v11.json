@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/Users/MacBookpro15/Projects/mobile-card-viewer/node_modules/rn-crash-reporter/android/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v11/values-v11.xml",
+        "outputFile": "/Users/stplmacmini19/Projects/BatterVsPitcher 3/node_modules/rn-crash-reporter/android/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v11/values-v11.xml",
         "map": [
             {
                 "to": {
@@ -12,7 +12,7 @@
                     "endOffset": 469
                 },
                 "from": {
-                    "file": "/Users/MacBookpro15/Projects/mobile-card-viewer/node_modules/rn-crash-reporter/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v11/values-v11.xml",
+                    "file": "/Users/stplmacmini19/Projects/BatterVsPitcher 3/node_modules/rn-crash-reporter/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -33,7 +33,7 @@
                     "endOffset": 894
                 },
                 "from": {
-                    "file": "/Users/MacBookpro15/Projects/mobile-card-viewer/node_modules/rn-crash-reporter/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v11/values-v11.xml",
+                    "file": "/Users/stplmacmini19/Projects/BatterVsPitcher 3/node_modules/rn-crash-reporter/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -54,7 +54,7 @@
                     "endOffset": 1322
                 },
                 "from": {
-                    "file": "/Users/MacBookpro15/Projects/mobile-card-viewer/node_modules/rn-crash-reporter/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v11/values-v11.xml",
+                    "file": "/Users/stplmacmini19/Projects/BatterVsPitcher 3/node_modules/rn-crash-reporter/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -75,7 +75,7 @@
                     "endOffset": 1748
                 },
                 "from": {
-                    "file": "/Users/MacBookpro15/Projects/mobile-card-viewer/node_modules/rn-crash-reporter/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v11/values-v11.xml",
+                    "file": "/Users/stplmacmini19/Projects/BatterVsPitcher 3/node_modules/rn-crash-reporter/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,
@@ -96,7 +96,7 @@
                     "endOffset": 2175
                 },
                 "from": {
-                    "file": "/Users/MacBookpro15/Projects/mobile-card-viewer/node_modules/rn-crash-reporter/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v11/values-v11.xml",
+                    "file": "/Users/stplmacmini19/Projects/BatterVsPitcher 3/node_modules/rn-crash-reporter/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 28,
                         "startColumn": 4,
@@ -117,7 +117,7 @@
                     "endOffset": 2600
                 },
                 "from": {
-                    "file": "/Users/MacBookpro15/Projects/mobile-card-viewer/node_modules/rn-crash-reporter/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v11/values-v11.xml",
+                    "file": "/Users/stplmacmini19/Projects/BatterVsPitcher 3/node_modules/rn-crash-reporter/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 34,
                         "startColumn": 4,
@@ -137,7 +137,7 @@
                     "endOffset": 2689
                 },
                 "from": {
-                    "file": "/Users/MacBookpro15/Projects/mobile-card-viewer/node_modules/rn-crash-reporter/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v11/values-v11.xml",
+                    "file": "/Users/stplmacmini19/Projects/BatterVsPitcher 3/node_modules/rn-crash-reporter/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 42,
                         "startColumn": 4,
@@ -156,7 +156,7 @@
                     "endOffset": 2790
                 },
                 "from": {
-                    "file": "/Users/MacBookpro15/Projects/mobile-card-viewer/node_modules/rn-crash-reporter/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v11/values-v11.xml",
+                    "file": "/Users/stplmacmini19/Projects/BatterVsPitcher 3/node_modules/rn-crash-reporter/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 43,
                         "startColumn": 4,
@@ -176,7 +176,7 @@
                     "endOffset": 3198
                 },
                 "from": {
-                    "file": "/Users/MacBookpro15/Projects/mobile-card-viewer/node_modules/rn-crash-reporter/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v11/values-v11.xml",
+                    "file": "/Users/stplmacmini19/Projects/BatterVsPitcher 3/node_modules/rn-crash-reporter/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 44,
                         "startColumn": 4,
@@ -197,7 +197,7 @@
                     "endOffset": 3618
                 },
                 "from": {
-                    "file": "/Users/MacBookpro15/Projects/mobile-card-viewer/node_modules/rn-crash-reporter/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v11/values-v11.xml",
+                    "file": "/Users/stplmacmini19/Projects/BatterVsPitcher 3/node_modules/rn-crash-reporter/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 49,
                         "startColumn": 4,
@@ -218,7 +218,7 @@
                     "endOffset": 3725
                 },
                 "from": {
-                    "file": "/Users/MacBookpro15/Projects/mobile-card-viewer/node_modules/rn-crash-reporter/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v11/values-v11.xml",
+                    "file": "/Users/stplmacmini19/Projects/BatterVsPitcher 3/node_modules/rn-crash-reporter/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 56,
                         "startColumn": 4,
@@ -239,7 +239,7 @@
                     "endOffset": 3854
                 },
                 "from": {
-                    "file": "/Users/MacBookpro15/Projects/mobile-card-viewer/node_modules/rn-crash-reporter/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v11/values-v11.xml",
+                    "file": "/Users/stplmacmini19/Projects/BatterVsPitcher 3/node_modules/rn-crash-reporter/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 58,
                         "startColumn": 4,
@@ -259,7 +259,7 @@
                     "endOffset": 3925
                 },
                 "from": {
-                    "file": "/Users/MacBookpro15/Projects/mobile-card-viewer/node_modules/rn-crash-reporter/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v11/values-v11.xml",
+                    "file": "/Users/stplmacmini19/Projects/BatterVsPitcher 3/node_modules/rn-crash-reporter/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 62,
                         "startColumn": 4,
@@ -278,7 +278,7 @@
                     "endOffset": 4008
                 },
                 "from": {
-                    "file": "/Users/MacBookpro15/Projects/mobile-card-viewer/node_modules/rn-crash-reporter/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v11/values-v11.xml",
+                    "file": "/Users/stplmacmini19/Projects/BatterVsPitcher 3/node_modules/rn-crash-reporter/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 63,
                         "startColumn": 4,
@@ -298,7 +298,7 @@
                     "endOffset": 7716
                 },
                 "from": {
-                    "file": "/Users/MacBookpro15/Projects/mobile-card-viewer/node_modules/rn-crash-reporter/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v11/values-v11.xml",
+                    "file": "/Users/stplmacmini19/Projects/BatterVsPitcher 3/node_modules/rn-crash-reporter/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 64,
                         "startColumn": 4,
@@ -319,7 +319,7 @@
                     "endOffset": 11564
                 },
                 "from": {
-                    "file": "/Users/MacBookpro15/Projects/mobile-card-viewer/node_modules/rn-crash-reporter/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v11/values-v11.xml",
+                    "file": "/Users/stplmacmini19/Projects/BatterVsPitcher 3/node_modules/rn-crash-reporter/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 115,
                         "startColumn": 4,
@@ -339,7 +339,7 @@
                     "endOffset": 11655
                 },
                 "from": {
-                    "file": "/Users/MacBookpro15/Projects/mobile-card-viewer/node_modules/rn-crash-reporter/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v11/values-v11.xml",
+                    "file": "/Users/stplmacmini19/Projects/BatterVsPitcher 3/node_modules/rn-crash-reporter/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 169,
                         "startColumn": 4,

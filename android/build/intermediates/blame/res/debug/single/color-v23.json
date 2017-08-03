@@ -1,38 +1,6 @@
 [
     {
-        "merged": "/Users/MacBookpro15/Projects/mobile-card-viewer/node_modules/rn-crash-reporter/android/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_thumb.xml",
-        "source": "/Users/MacBookpro15/Projects/mobile-card-viewer/node_modules/rn-crash-reporter/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_tint_switch_thumb.xml"
-    },
-    {
-        "merged": "/Users/MacBookpro15/Projects/mobile-card-viewer/node_modules/rn-crash-reporter/android/build/intermediates/res/merged/debug/color-v23/abc_tint_seek_thumb.xml",
-        "source": "/Users/MacBookpro15/Projects/mobile-card-viewer/node_modules/rn-crash-reporter/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_tint_seek_thumb.xml"
-    },
-    {
-        "merged": "/Users/MacBookpro15/Projects/mobile-card-viewer/node_modules/rn-crash-reporter/android/build/intermediates/res/merged/debug/color-v23/abc_tint_default.xml",
-        "source": "/Users/MacBookpro15/Projects/mobile-card-viewer/node_modules/rn-crash-reporter/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_tint_default.xml"
-    },
-    {
-        "merged": "/Users/MacBookpro15/Projects/mobile-card-viewer/node_modules/rn-crash-reporter/android/build/intermediates/res/merged/debug/color-v23/abc_color_highlight_material.xml",
-        "source": "/Users/MacBookpro15/Projects/mobile-card-viewer/node_modules/rn-crash-reporter/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/color-v23/abc_color_highlight_material.xml"
-    },
-    {
-        "merged": "/Users/MacBookpro15/Projects/mobile-card-viewer/node_modules/rn-crash-reporter/android/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_track.xml",
-        "source": "/Users/MacBookpro15/Projects/mobile-card-viewer/node_modules/rn-crash-reporter/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_tint_switch_track.xml"
-    },
-    {
-        "merged": "/Users/MacBookpro15/Projects/mobile-card-viewer/node_modules/rn-crash-reporter/android/build/intermediates/res/merged/debug/color-v23/abc_tint_spinner.xml",
-        "source": "/Users/MacBookpro15/Projects/mobile-card-viewer/node_modules/rn-crash-reporter/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_tint_spinner.xml"
-    },
-    {
-        "merged": "/Users/MacBookpro15/Projects/mobile-card-viewer/node_modules/rn-crash-reporter/android/build/intermediates/res/merged/debug/color-v23/abc_tint_btn_checkable.xml",
-        "source": "/Users/MacBookpro15/Projects/mobile-card-viewer/node_modules/rn-crash-reporter/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_tint_btn_checkable.xml"
-    },
-    {
-        "merged": "/Users/MacBookpro15/Projects/mobile-card-viewer/node_modules/rn-crash-reporter/android/build/intermediates/res/merged/debug/color-v23/abc_btn_colored_borderless_text_material.xml",
-        "source": "/Users/MacBookpro15/Projects/mobile-card-viewer/node_modules/rn-crash-reporter/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_btn_colored_borderless_text_material.xml"
-    },
-    {
-        "merged": "/Users/MacBookpro15/Projects/mobile-card-viewer/node_modules/rn-crash-reporter/android/build/intermediates/res/merged/debug/color-v23/abc_tint_edittext.xml",
-        "source": "/Users/MacBookpro15/Projects/mobile-card-viewer/node_modules/rn-crash-reporter/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_tint_edittext.xml"
+        "merged": "/Users/stplmacmini19/Projects/BatterVsPitcher 3/node_modules/rn-crash-reporter/android/build/intermediates/res/merged/debug/color-v23/abc_color_highlight_material.xml",
+        "source": "/Users/stplmacmini19/Projects/BatterVsPitcher 3/node_modules/rn-crash-reporter/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/color-v23/abc_color_highlight_material.xml"
     }
 ]

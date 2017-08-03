@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/Users/MacBookpro15/Projects/mobile-card-viewer/node_modules/rn-crash-reporter/android/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-port/values-port.xml",
+        "outputFile": "/Users/stplmacmini19/Projects/BatterVsPitcher 3/node_modules/rn-crash-reporter/android/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-port/values-port.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 106
                 },
                 "from": {
-                    "file": "/Users/MacBookpro15/Projects/mobile-card-viewer/node_modules/rn-crash-reporter/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-port/values-port.xml",
+                    "file": "/Users/stplmacmini19/Projects/BatterVsPitcher 3/node_modules/rn-crash-reporter/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-port/values-port.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,

@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/Users/MacBookpro15/Projects/mobile-card-viewer/node_modules/rn-crash-reporter/android/src/main/shaders"/></dataSet><dataSet config="release"><source path="/Users/MacBookpro15/Projects/mobile-card-viewer/node_modules/rn-crash-reporter/android/src/release/shaders"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="/Users/stplmacmini19/Projects/BatterVsPitcher 3/node_modules/rn-crash-reporter/android/src/main/shaders"/></dataSet><dataSet config="release"><source path="/Users/stplmacmini19/Projects/BatterVsPitcher 3/node_modules/rn-crash-reporter/android/src/release/shaders"/></dataSet></merger>
