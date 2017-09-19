@@ -30,6 +30,7 @@ public class RNCrashReporter extends ReactContextBaseJavaModule {
     public RNCrashReporter(ReactApplicationContext reactContext, Activity activity) {
         super(reactContext);
         currentActivity = activity;
+
     }
 
     @Override

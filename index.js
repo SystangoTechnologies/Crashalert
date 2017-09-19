@@ -11,8 +11,6 @@ import SQLiteManager from './lib/SQLiteManager'
 import SendReportOnRemote from './lib/SendReportOnRemote'
 import AddDeviceInfo from './lib/AddDeviceInfo'
 
-
-
 export {
   Configuration,
   CrashReporter,
