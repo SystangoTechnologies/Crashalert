@@ -1,71 +1,19 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "rn-crash-reporter@latest",
-        "scope": null,
-        "escapedName": "rn-crash-reporter",
-        "name": "rn-crash-reporter",
-        "rawSpec": "latest",
-        "spec": "latest",
-        "type": "tag"
-      },
-      "/Users/MacBookpro15/Projects/BatterVsPitcher"
-    ]
-  ],
-  "_from": "rn-crash-reporter@latest",
-  "_id": "rn-crash-reporter@1.0.7",
-  "_inCache": true,
-  "_location": "/rn-crash-reporter",
-  "_nodeVersion": "7.4.0",
-  "_npmOperationalInternal": {
-    "host": "packages-18-east.internal.npmjs.com",
-    "tmp": "tmp/rn-crash-reporter-1.0.7.tgz_1488868696035_0.319390750490129"
+  "name": "rn-crash-reporter",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "react-native": ">=0.18.0"
   },
-  "_npmUser": {
-    "name": "systango",
-    "email": "engineering@systango.com"
-  },
-  "_npmVersion": "4.0.5",
-  "_phantomChildren": {},
-  "_requested": {
-    "raw": "rn-crash-reporter@latest",
-    "scope": null,
-    "escapedName": "rn-crash-reporter",
-    "name": "rn-crash-reporter",
-    "rawSpec": "latest",
-    "spec": "latest",
-    "type": "tag"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/",
-    "/player_card_module"
-  ],
-  "_resolved": "https://registry.npmjs.org/rn-crash-reporter/-/rn-crash-reporter-1.0.7.tgz",
-  "_shasum": "116ef55a37532ca59911f36f35d967891551e27f",
-  "_shrinkwrap": null,
-  "_spec": "rn-crash-reporter@latest",
-  "_where": "/Users/MacBookpro15/Projects/BatterVsPitcher",
+  "version": "1.0.7",
   "author": {
     "name": "Sytango Technologies",
     "email": "engineering@systango.com"
   },
-  "bugs": {
-    "url": "https://github.com/sytango-technologies/rn-crash-reporter/issues"
-  },
   "dependencies": {
-    "react-native-device-info": "^0.9.7",
-    "react-native-sqlite-storage": "^3.1.2"
+    "react-native-sqlite-storage": "git+https://github.com/SystangoTechnologiesInternal/react-native-sqlite-storage.git",
+    "react-native-device-info": "git+https://github.com/SystangoTechnologiesInternal/react-native-device-info.git"
   },
   "description": "Library of react native components which allow reporting steps leading to an application crash",
-  "devDependencies": {},
-  "directories": {},
-  "dist": {
-    "shasum": "116ef55a37532ca59911f36f35d967891551e27f",
-    "tarball": "https://registry.npmjs.org/rn-crash-reporter/-/rn-crash-reporter-1.0.7.tgz"
-  },
-  "homepage": "https://github.com/sytango-technologies/rn-crash-reporter/wiki",
   "keywords": [
     "react-component",
     "react-native",
@@ -80,20 +28,15 @@
   "main": "index.js",
   "maintainers": [
     {
-      "name": "systango",
+      "name": "Sytango Technologies",
       "email": "engineering@systango.com"
     }
   ],
-  "name": "rn-crash-reporter",
-  "optionalDependencies": {},
-  "peerDependencies": {
-    "react-native": ">=0.18.0"
-  },
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sytango-technologies/rn-crash-reporter.git"
+    "url": "git+https://github.com/sytango-technologies/rn-crash-reporter"
   },
+  "homepage": "https://github.com/sytango-technologies/rn-crash-reporter/wiki",
   "rnpm": {
     "android": {
       "packageInstance": "new RNSCrashReporterModule(this)"
@@ -101,7 +44,5 @@
     "ios": {
       "project": "ios/RNCrashReporter.xcodeproj"
     }
-  },
-  "scripts": {},
-  "version": "1.0.7"
+  }
 }
