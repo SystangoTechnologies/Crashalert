@@ -4,62 +4,58 @@ A reporter that stores user actions step and runtime crashes info. You no longer
 
 Version 1.0.7 supports react-native >= 0.18.0
 
-Please follow the [link here](FLOW_README.md)
-
 ## Add it to your project
 
+### Installation
 
-install Systango bug reporter as described below:
-
+Install Systango bug reporter by running the following command from within your app's root directory:
 - Run `npm install rn-crash-reporter --save`
 
+### Link libraries
 
-You can try linking the project automatically for react-native >= 0.29:
-
+You can try linking the project automatically for react-native version >= 0.29 by running the following command:
 - Run `$ react-native link`
 
-for react-native < 0.29:
-
+for react-native version < 0.29, please try the following command:
 - Run `$ rnpm link`
 
 or:
 
-## Manually on iOS
+## Manual Installation Notes
 
+###  iOS Configuration 
+
+Once you've acquired the `rn-crash-reporter`, you need to integrate it into the Xcode project of your React Native app and configure it correctly. To do this, take the following steps:
 1. Open your project in XCode, right click on `Libraries` and click `Add
-   Files to "Your Project Name"` Look under `node_modules/rn-crash-reporter/iOS` and add `RNSystangoBugReporter.xcodeproj`.  [(Screenshot)]().
-2. Add `libRNSystangoBugReporter.a` to `Build Phases -> Link Binary With Libraries`
-   [(Screenshot)]().
+   Files to "Your Project Name"`  Look under ` node_modules/rn-crash-reporter/iOS`  and select  `RNSystangoBugReporter.xcodeproj`.  [(Screenshot)]().
+2. Select the project node in Xcode and select the "Build Phases" tab of your project configuration. Drag `libRNSystangoBugReporter.a` from `Libraries/RNSystangoBugReporter.xcodeproj/Products` into the "Link Binary With Libraries" section of your project's "Build Phases" configuration. [(Screenshot)]().
 3. Click on `RNSystangoBugReporter.xcodeproj` in `Libraries` and go the `Build
-   Settings` tab. Double click the text to the right of `Header Search
-   Paths` and verify that it has `$(SRCROOT)/../react-native/React` - if it
-   isn't, then add it. This is so XCode is able to find the headers that
-   the `RNSystangoBugReporter` source files are referring to by pointing to the
-   header files installed within the `react-native` `node_modules`
-   directory. [(Screenshot)]().`
-
-Then:
+   Settings` tab. Double click the text to the right of `Header Search Paths` and verify that it has `$(SRCROOT)/../react-native/React` - if it isn't, then add it. This is so XCode is able to find the headers that the `RNSystangoBugReporter` source files are referring to by pointing to the header files installed within the `react-native` `node_modules` directory. [(Screenshot)]().
 
 
-## Manually on Android
+### Android Configuration 
 
-1. in `android/settings.gradle`
+1. EDIT  `android/settings.gradle`
    ```java
    ...
+   // ADD the following lines
    include ':rn-crash-reporter'
    project(':rn-crash-reporter').projectDir = new File(rootProject.projectDir, '../node_modules/rn-crash-reporter/android')
    ```
 
-2. in `android/app/build.gradle` add:
+2. EDIT  `android/app/build.gradle` ADD :
    ```java
    dependencies {
        ...
+       // ADD the following in dependencies section
        compile project(':rn-crash-reporter')
    }
    ```
 
-3. and finally, in `android/src/main/java/com/{YOUR_APP_NAME}/MainActivity.java` for react-native < 0.29,
-   or `android/src/main/java/com/{YOUR_APP_NAME}/MainApplication.java` for react-native >= 0.29 add:
+3. Make sure in `MainApplication.java` you have the following code : 
+    Source :  `android/src/main/java/com/{YOUR_APP_NAME}/MainActivity.java` for react-native < 0.29,
+    OR
+    Source :  `android/src/main/java/com/{YOUR_APP_NAME}/MainApplication.java` for react-native >= 0.29 ADD:
 
    ```java
    //...
@@ -73,8 +69,7 @@ Then:
      );
     }
     ```
-
- if you are using react-native >= 0.29 then you should create the static instance of Activity in MainActivity class like:
+ For react-native >= 0.29 , then you should create the static instance of Activity in MainActivity class like:
 
     ```java
 
@@ -107,13 +102,26 @@ Then:
             new RNCrashReporterModule(MainActivity.getActivity()) // <---- This!
     );
     ```
+    
+You should follow Node server and Web client installation for rn-crash-reporter [here](https://github.com/sytango-technologies/rn-crash-viewer)
 
-###You should follow Node server and Web client installation for rn-crash-reporter [here](https://github.com/sytango-technologies/rn-crash-viewer)
+## Node server and Web client Installation for rn-crash-reporter
 
- The following code you should include in your index.ios.js and index.android.js in componentWillMount() method. This is required configuration for crash reporter. If you are using Redux then you can add this configuration on any initial component class.
+### Following steps to be followed for the Node server installation :- 
+- Open your terminal and type the command `brew install docker docker-compose docker-machine xhyve docker-machine-driver-xhyve`  to install the `docker-compose` using `brew`.
+- Now, type the command `brew cask install docker`
+- Take clone or Download the zip file from the link [here](https://github.com/sytango-technologies/rn-crash-viewer).
+- 
+
+
+## Basic usage
+
+First you'll need to add following lines of code in your `index.ios.js` and `index.android.js` in `componentWillMount()` method your component class. This is required configuration for crash reporter and If you are using Redux then you can add this configuration on any initial component class.
+
 
 ```javascript
 
+    // Import the CrashReporter,Configuration 'rn-crash-reporter' module
     import { CrashReporter, Configuration } from 'rn-crash-reporter'; //  <------- This
 
     //*> Configure Crash Reporter                   // <---- This!
@@ -127,9 +135,9 @@ Then:
 
 The following code you can use something like this:
 
-
 ```javascript
 
+    // Import the component 'rn-crash-reporter' module
     import {Button} from 'rn-crash-reporter';
 
     // Within your render function
@@ -137,7 +145,7 @@ The following code you can use something like this:
         LOG IN
     </Button>
 
-    // Later on in your styles..
+    // Adding your styles...
     var styles = StyleSheet.create({
     btn: {
         height:35,
@@ -150,7 +158,8 @@ The following code you can use something like this:
     });
 ```
 
-### With new version of react native you can use button like this without any existing code changes
+### With new version of react native you can use button component as follows without any changes in the existing code.
+
 ```javascript
     <Button title="LOG IN" style={styles.button} onPress={ ()=> this.pressLogin()} />
 ```
@@ -158,6 +167,7 @@ The following code you can use something like this:
 ## Additional props
 
 ```javascript
+    // Passing the additional props
     <Button style={styles.button} onPress={ ()=> this.pressLogin()} isBorder={false}>
         LOG IN
     </Button>
@@ -165,10 +175,11 @@ The following code you can use something like this:
 
 ## Additional component
 
-You can also use the SRNView component to capture onPress event on your custom cell of ListView like following code:
+You can also use the `SRNView` component to capture `onPress` event on your custom cell of `ListView` component like following code:
 
 ```javascript
 
+    // Import the SRNView 'rn-crash-reporter' module
     import {SRNView} from 'rn-crash-reporter';
 
 
@@ -191,7 +202,12 @@ You can also use the SRNView component to capture onPress event on your custom c
     }
 ```
 
-here actionOn props not required, you can pass this props to associate extra info about your cell. Also you can use the following component TouchableOpacity, TouchableNativeFeedback and TouchableHighlight
+Here on the above code `actionOn` props are not required, you can pass this props to associate extra info about your cell.
+
+### Similarly, you can use the following components :-
+- TouchableOpacity
+- TouchableNativeFeedback
+- TouchableHighlight
 
 
 ## License

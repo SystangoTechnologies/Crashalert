@@ -4,7 +4,7 @@
   "peerDependencies": {
     "react-native": ">=0.18.0"
   },
-  "version": "1.0.7",
+  "version": "1.0.8",
   "author": {
     "name": "Sytango Technologies",
     "email": "engineering@systango.com"
