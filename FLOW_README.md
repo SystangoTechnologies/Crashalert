@@ -11,20 +11,22 @@ A reporter that stores user actions step and runtime crashes info. You no longer
 
 ## Node server Installation for rn-crash-reporter
 
-### Following steps to be followed for the Node server installation :- 
-- Open your terminal and type the command `brew install docker docker-compose docker-machine xhyve docker-machine-driver-xhyve`  to install the `docker-compose` using `brew`.
-- Now, type the command `brew cask install docker`
+### Following steps to be followed for the Node server installation using docker container:- 
+- Open your terminal and run the following command (assuming you have already installed the `brew`)
+        $ `brew install docker docker-compose docker-machine xhyve docker-machine-driver-xhyve`
+        $ `brew cask install docker`
 - Take clone or Download the zip file from the link [here](https://github.com/sytango-technologies/rn-crash-viewer).
 - Extract the zip source file and get into the root folder of `rn-crash-viewer` on the terminal.
-- Type the command `docker-compose build` and hit enter to build the image.
-- Now, type the command `docker-compose up` and hit enter to aggregates the output of each container.
+- Now run the command 
+        $ `docker-compose build`
+        $ `docker-compose up`
 
 ## Web client Installation for rn-crash-reporter
 
 NOTE : Please ensure that the docker container is already running.
 
 ### Following steps to be followed for the Web client installation :- 
-- Open the browser and type this URL  `http://localhost:8000/` in URL locator and hit enter to open the Web Client App. Please follow the[(Screenshot)](). (NOTE : You can also edit the port no in `docker-compose.yml` file in the web section.)
+- Open the browser and type this URL  `http://localhost:8000/` in URL locator and hit enter to open the Web Client App. Please follow the[(Screenshot)](WebClient.png). (NOTE : You can also edit the port no in `docker-compose.yml` file in the web section.)
 - You can login the app using the following credentials :-
     Username : admin@example.com
     Password : password
