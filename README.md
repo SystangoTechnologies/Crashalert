@@ -1,10 +1,14 @@
 # rn-crash-reporter
 
-A reporter that stores user actions step and runtime crashes info. You no longer need to change existing code, you just need to import our components in your js classes.
+## What is RN Crash Reporter?
+
+RN crash reporter is a software application whose function is to identify report crash details and to alert when there are runtime crashes, in production or on development / testing environments. Crash reports often include data such as stack traces, type of crash, trends and version of application.
+
+A reporter that stores user actions step and runtime crashes info. You no longer need to change existing code, you just need to import our components in your js classes. 
 
 Version 1.0.7 supports react-native >= 0.18.0
 
-Please follow the [link here](FLOW_README.md)
+Please follow the [link here](FLOW_README.md) for the complete implementation of `rn-crash-reporter`.
 
 ## Add it to your project
 
