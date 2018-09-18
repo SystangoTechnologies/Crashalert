@@ -23,15 +23,6 @@
     return sharedInstance;
 }
 
-- (void)handleSoftJSExceptionWithMessage:(NSString *)message stack:(NSArray *)stack exceptionId:(NSNumber *)exceptionId{
-    
-}
-
-- (void)handleFatalJSExceptionWithMessage:(NSString *)message stack:(NSArray *)stack exceptionId:(NSNumber *)exceptionId{
-       
-}
-
-
 RCT_EXPORT_MODULE();
 
 RCT_EXPORT_METHOD(setDBAndDeviceID:(NSString *)dbName deviceId:(NSString *)deviceId)

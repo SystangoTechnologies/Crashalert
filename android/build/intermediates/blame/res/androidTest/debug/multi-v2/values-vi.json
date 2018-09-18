@@ -1,0 +1,43 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/stplmacmini15/Documents/Projects/Predictor/PredictorApp/node_modules/rn-crash-reporter/android/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-vi/values-vi.xml",
+            "map": [
+                {
+                    "source": "/Users/stplmacmini15/.gradle/caches/transforms-1/files-1.1/react-native-0.19.1.aar/7366e63eb2f31653481e64dd31ead924/res/values-vi/values-vi.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,109,181,260,331,397,453,512",
+                        "endColumns": "53,71,78,70,65,55,58,73",
+                        "endOffsets": "104,176,255,326,392,448,507,581"
+                    },
+                    "to": {
+                        "startLines": "19,20,21,22,23,24,25,26",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "1864,1918,1990,2069,2140,2206,2262,2321",
+                        "endColumns": "53,71,78,70,65,55,58,73",
+                        "endOffsets": "1913,1985,2064,2135,2201,2257,2316,2390"
+                    }
+                },
+                {
+                    "source": "/Users/stplmacmini15/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/b48108f1c71bf240f5a55f1537e513cd/res/values-vi/values-vi.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "280,394,502,625,733,842,926,1029,1148,1232,1336,1445,1546,1651,1765,1870,1990,2089",
+                        "endColumns": "113,107,122,107,108,83,102,118,83,103,108,100,104,113,104,119,98,100",
+                        "endOffsets": "389,497,620,728,837,921,1024,1143,1227,1331,1440,1541,1646,1760,1865,1985,2084,2185"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,27",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,169,277,400,508,617,701,804,923,1007,1111,1220,1321,1426,1540,1645,1765,2395",
+                        "endColumns": "113,107,122,107,108,83,102,118,83,103,108,100,104,113,104,119,98,100",
+                        "endOffsets": "164,272,395,503,612,696,799,918,1002,1106,1215,1316,1421,1535,1640,1760,1859,2491"
+                    }
+                }
+            ]
+        }
+    ]
+}

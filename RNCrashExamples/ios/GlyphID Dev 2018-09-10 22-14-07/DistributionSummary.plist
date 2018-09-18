@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>GlyphID Dev.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>armv7</string>
+				<string>arm64</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>2BDEF1D6E83804D6204E35D59FDECE71E85DBDD3</string>
+				<key>dateExpires</key>
+				<string>10/06/19</string>
+				<key>type</key>
+				<string>iOS Distribution</string>
+			</dict>
+			<key>embeddedBinaries</key>
+			<array>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>armv7</string>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>2BDEF1D6E83804D6204E35D59FDECE71E85DBDD3</string>
+						<key>dateExpires</key>
+						<string>10/06/19</string>
+						<key>type</key>
+						<string>iOS Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>AcuantMobileSDK.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>44LS7372X4</string>
+						<key>name</key>
+						<string>Glyph ID, LLC</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>armv7</string>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>2BDEF1D6E83804D6204E35D59FDECE71E85DBDD3</string>
+						<key>dateExpires</key>
+						<string>10/06/19</string>
+						<key>type</key>
+						<string>iOS Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>MicroBlink.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>44LS7372X4</string>
+						<key>name</key>
+						<string>Glyph ID, LLC</string>
+					</dict>
+				</dict>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>44LS7372X4.id.glyph.glyphiddev</string>
+				<key>aps-environment</key>
+				<string>production</string>
+				<key>com.apple.developer.associated-domains</key>
+				<array>
+					<string>applinks:glyph.app.link</string>
+					<string>applinks:glyph-alternate.app.link</string>
+				</array>
+				<key>com.apple.developer.team-identifier</key>
+				<string>44LS7372X4</string>
+				<key>get-task-allow</key>
+				<false/>
+				<key>keychain-access-groups</key>
+				<array>
+					<string>44LS7372X4.id.glyph.glyphid</string>
+				</array>
+			</dict>
+			<key>name</key>
+			<string>GlyphID Development.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>ebe419e0-57d1-426c-8932-f250f44f5d8c</string>
+				<key>name</key>
+				<string>iOS Team Ad Hoc Provisioning Profile: id.glyph.glyphiddev</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>44LS7372X4</string>
+				<key>name</key>
+				<string>Glyph ID, LLC</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

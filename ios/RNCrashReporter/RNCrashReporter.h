@@ -8,13 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import "RCTBridgeModule.h"
-#import "RCTExceptionsManager.h"
 
-@interface RNCrashReporter : NSObject<RCTBridgeModule, RCTExceptionsManagerDelegate>
+@interface RNCrashReporter : NSObject<RCTBridgeModule>
 {
     int deviceID;
     NSString *DBName;
 }
 + (RNCrashReporter*)init;
-@property (nonatomic, strong) id<RCTExceptionsManagerDelegate> delegate;
 @end

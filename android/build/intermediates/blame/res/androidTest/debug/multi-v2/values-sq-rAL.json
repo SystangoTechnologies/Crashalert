@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/stplmacmini15/Documents/Projects/Predictor/PredictorApp/node_modules/rn-crash-reporter/android/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-sq-rAL/values-sq-rAL.xml",
+            "map": [
+                {
+                    "source": "/Users/stplmacmini15/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/b48108f1c71bf240f5a55f1537e513cd/res/values-sq-rAL/values-sq-rAL.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "284,398,506,629,729,841,928,1038,1161,1244,1350,1455,1553,1659,1762,1878,2009,2108",
+                        "endColumns": "113,107,122,99,111,86,109,122,82,105,104,97,105,102,115,130,98,100",
+                        "endOffsets": "393,501,624,724,836,923,1033,1156,1239,1345,1450,1548,1654,1757,1873,2004,2103,2204"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,169,277,400,500,612,699,809,932,1015,1121,1226,1324,1430,1533,1649,1780,1879",
+                        "endColumns": "113,107,122,99,111,86,109,122,82,105,104,97,105,102,115,130,98,100",
+                        "endOffsets": "164,272,395,495,607,694,804,927,1010,1116,1221,1319,1425,1528,1644,1775,1874,1975"
+                    }
+                }
+            ]
+        }
+    ]
+}
