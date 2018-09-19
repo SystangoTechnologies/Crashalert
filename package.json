@@ -2,16 +2,12 @@
   "name": "rn-crash-reporter",
   "optionalDependencies": {},
   "peerDependencies": {
-    "react-native": ">=0.18.0"
+    "react-native": ">=0.52.0"
   },
   "version": "1.0.8",
   "author": {
     "name": "Sytango Technologies",
     "email": "engineering@systango.com"
-  },
-  "dependencies": {
-    "react-native-sqlite-storage": "git+https://github.com/SystangoTechnologiesInternal/react-native-sqlite-storage.git",
-    "react-native-device-info": "git+https://github.com/SystangoTechnologiesInternal/react-native-device-info.git"
   },
   "description": "Library of react native components which allow reporting steps leading to an application crash",
   "keywords": [
@@ -26,6 +22,10 @@
   ],
   "license": "MIT",
   "main": "index.js",
+  "dependencies": {
+    "react-native-device-info": "^0.21.5",
+    "react-native-sqlite-storage": "^3.3.4"
+  },
   "maintainers": [
     {
       "name": "Sytango Technologies",
@@ -36,13 +36,5 @@
     "type": "git",
     "url": "git+https://github.com/sytango-technologies/rn-crash-reporter"
   },
-  "homepage": "https://github.com/sytango-technologies/rn-crash-reporter/wiki",
-  "rnpm": {
-    "android": {
-      "packageInstance": "new RNSCrashReporterModule(this)"
-    },
-    "ios": {
-      "project": "ios/RNCrashReporter.xcodeproj"
-    }
-  }
+  "homepage": "https://github.com/sytango-technologies/rn-crash-reporter"
 }

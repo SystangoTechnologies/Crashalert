@@ -1,0 +1,44 @@
+{
+    "parser": "babel-eslint",
+    "extends": "airbnb",
+    "plugins": [
+        "react",
+        "jsx-a11y",
+        "import"
+    ],
+    "rules": {
+      "react/destructuring-assignment": "off",
+      "no-underscore-dangle": "off",
+      "react/jsx-filename-extension": "off",
+      "class-methods-use-this": "off",
+      "new-cap": "off",
+      "no-console": "off",
+      "arrow-body-style": "off",
+      "react/prop-types": "off",
+      "react/sort-comp": "off",
+      "no-use-before-define": "off",
+      "camelcase": "off",
+      "react/no-did-mount-set-state": "off",
+      "no-unused-expressions": "off",
+      "global-require": "off",
+      "array-callback-return": "off",
+      "react/no-array-index-key": "off",
+      "react/no-unused-state": "off",
+      "no-cond-assign": "off",
+      "no-bitwise": "off",
+      "no-plusplus": "off",
+      "no-mixed-operators": "off",
+      "no-return-await": "off",
+      "comma-dangle": "off",
+      "no-await-in-loop": "off",
+      "react/no-string-refs": "off",
+      "max-len":"off",
+      "no-else-return":"off",
+      "dot-notation":"off",
+      "no-nested-ternary":"off"
+    },
+    "globals": {
+      "fetch": false,
+      "FormData": false
+    }
+}

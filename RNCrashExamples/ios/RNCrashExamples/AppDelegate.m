@@ -7,13 +7,8 @@
 
 #import "AppDelegate.h"
 #import <CodePush/CodePush.h>
-#import <AppCenterReactNativeCrashes/AppCenterReactNativeCrashes.h>
-#import <AppCenterReactNativeAnalytics/AppCenterReactNativeAnalytics.h>
-#import <AppCenterReactNative/AppCenterReactNative.h>
-
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
-#import "Orientation.h"
 
 @implementation AppDelegate
 
@@ -21,15 +16,8 @@
 {
   NSURL *jsCodeLocation;
 
-  [AppCenterReactNativeCrashes register];  // Initialize AppCenter crashes
-
-  [AppCenterReactNativeAnalytics registerWithInitiallyEnabled:false];  // Initialize AppCenter analytics
-
-  [AppCenterReactNative register];  // Initialize AppCenter 
-  
-
 #ifdef DEBUG
-  jsCodeLocation = [NSURL URLWithString:@"http://192.168.2.57:8081/index.bundle?platform=ios&dev=true"];
+  jsCodeLocation = [NSURL URLWithString:@"http://192.168.1.76:8081/index.bundle?platform=ios&dev=true"];
 #else
   jsCodeLocation = [CodePush bundleURL];
 #endif
@@ -48,10 +36,4 @@
   return YES;
 }
 
-- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window {
-  while ([[UIDevice currentDevice] isGeneratingDeviceOrientationNotifications]) {
-    [[UIDevice currentDevice] endGeneratingDeviceOrientationNotifications];
-  }
-  return [Orientation getOrientation];
-}
 @end

@@ -11,7 +11,7 @@ export default class App extends Component {
     componentWillMount(){
 
         CrashReporter.setConfiguration({
-            hostURL: 'http://localhost:8000', // Replace this URL with your Server base url, in my case I have setup the node server using docker on my maching
+            hostURL: 'http://192.168.1.76:8000', // Replace this URL with your Server base url, in my case I have setup the node server using docker on my maching
             enableReporter: true  // pass false here if you don't want to enable crash reporting
         });
     }
