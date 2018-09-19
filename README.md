@@ -29,6 +29,14 @@ Install Systango bug reporter by running the following command from within your 
 
 ### NOTE: Please follow the [link here](FLOW_README.md) for the complete implementation of `rn-crash-viewer`.
 
+## Additional Features into our `RNCrashExamples` project :
+
+We have already integrated `Eslint` , `react-native-code-push`, `react-navigation` into our `RNCrashExamples` project.
+You can use the following reference :
+- `Eslint` : Follow the link [here](https://www.themarketingtechnologist.co/eslint-with-airbnb-javascript-style-guide-in-webstorm/).
+- `Code Push` : Follow the link [here](https://github.com/Microsoft/react-native-code-push).
+- `react-navigation` : Follow the link [here](https://reactnavigation.org/).
+
 ## Basic usage
 
 First of all, you'll need to add following code in your `app.js` or any top hierarchy component in `counstructor` or  `componentWillMount()` method. This is required configuration for crash reporter.
@@ -46,7 +54,7 @@ CrashReporter.setConfiguration({
 
 ### Sample
 
-The following code you can use something like this:
+You can simply try the following sample code :
 
 ```javascript
 
@@ -70,12 +78,6 @@ width:100
 
 });
 ```
-
-### With new version of react native you can use button component as follows without any changes in the existing code.
-
-```javascript
-<Button title="LOG IN" style={styles.button} onPress={()=> this.pressLogin()} classRef={this.constructor.name}/>
-```
 NOTE : Following are some additional props which might be used to pass manual information associated with the component otherwise the `default` information of the component will get passed.
 
 ## Additional props
@@ -83,6 +85,7 @@ NOTE : Following are some additional props which might be used to pass manual in
 - classRef : To get the current reference of class on which the components are wrapped.
 - searchText : To get the searched text on the `TextInput` component.(NOTE : While using `TextInput` component, you need to pass the `text` value in this field)
 - actionOn : To associate extra information related to the component used.
+
 ## Additional component
 
 You can also use the `SRNView` component to capture `onPress` event on your custom cell of `ListView` component like following code:
@@ -111,13 +114,6 @@ return (
 )
 }
 ```
-
-### Similarly, you can use the following components :-
-- TouchableOpacity
-- TouchableNativeFeedback
-- TouchableHighlight
-
-
 ## License
 
 License is MIT
