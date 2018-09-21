@@ -39,7 +39,7 @@ You can use the following reference :
 
 ## Basic usage
 
-First of all, you'll need to add following code in your `app.js` or any top hierarchy component in `counstructor` or  `componentWillMount()` method. This is required configuration for crash reporter.
+First of all, you'll need to add following code in your `app.js` or any top hierarchy component in `constructor` or  `componentWillMount()` method. This is required configuration for crash reporter.
 
 ```javascript
 
