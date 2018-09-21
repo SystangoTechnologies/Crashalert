@@ -33,7 +33,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
-            new CodePush("RUwxvAUE6hi3Wz4nqNnBzIhNKDbFB11ioIAdX", getApplicationContext(), BuildConfig.DEBUG),
+            new CodePush("null", getApplicationContext(), BuildConfig.DEBUG),
             new RNDeviceInfo(),
               new SQLitePluginPackage()
       );
