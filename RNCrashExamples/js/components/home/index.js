@@ -8,7 +8,7 @@ import {
 } from 'react-native';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { Button } from 'rn-crash-reporter';
+import { Button, TouchableHighlight, TouchableOpacity } from 'rn-crash-reporter';
 import CodePush from 'react-native-code-push';
 import * as fetchRoute from '../../actions/route';
 import * as authActions from '../../actions/user';
@@ -73,22 +73,22 @@ bytes received
           <Button style={[styles.btn, { width: this.state.width - 70 }]} classRef={this.constructor.name} onPress={() => this.setState({ syncMessage: 'Step 2 clicked' })} searchText="2912">
                 To record step 2, Click here!
           </Button>
-          <Button
+          <TouchableHighlight
             style={[styles.btn, { width: this.state.width - 70 }]}
             classRef={this.constructor.name}
             onPress={() => { throw new Error('Javascript error test successful!'); }
             }
           >
-                For JS Crash, Click Here!
-          </Button>
-          <Button
+               <Text> For JS Crash, Click Here! </Text>
+          </TouchableHighlight>
+          <TouchableOpacity
             style={[styles.btn, { width: this.state.width - 70 }]}
             classRef={this.constructor.name}
             onPress={() => this.divideCrash()
             }
           >
-                For Random Crash, Click Here!
-          </Button>
+            <Text> For Random Crash, Click Here! </Text>
+          </TouchableOpacity>
           <Button style={[styles.btn, { width: this.state.width - 70 }]} classRef={this.constructor.name} onPress={() => this.pressViewCrashReport()}>
                 Search
           </Button>

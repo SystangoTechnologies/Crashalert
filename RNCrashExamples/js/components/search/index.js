@@ -65,7 +65,7 @@ class Search extends Component {
     this.setState({ searchedData: newData, text: text })
   }
 
-  _renderItem(item){
+  _renderItem(item) {
     if(typeof item!= 'undefined'){
     return(
       <View style = {{justifyContent:'center',alignItems:'center', backgroundColor:'grey', marginBottom:10,marginHorizontal:10,}}>
@@ -88,9 +88,8 @@ class Search extends Component {
            <Image
              source={require('../../../assets/home/navigationBG.png')}
              style={{
-  position: 'absolute', left: 0, top: 0, width: this.state.width
-}}
-           />
+              position: 'absolute', left: 0, top: 0, width: this.state.width
+            }}/>
 
            <View style={{
              flexDirection: 'row', height: (Platform.OS === 'android') ? 50 : 64, alignItems: 'center', paddingTop: 5, backgroundColor:'green'

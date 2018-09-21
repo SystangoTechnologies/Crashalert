@@ -1,41 +1,39 @@
 # rn-crash-reporter
 
-## What is RN Crash Reporter?
 
-RN crash reporter is a software application whose function is to identify report crash details and to alert when there are runtime crashes, in production or on development / testing environments. Crash reports often include data such as user steps, stack traces, type of crash, trends and version of application.
+As a mobile app developer, you’ve likely faced your own unique challenges in detecting, reproducing and debugging run-time crashes in React Native applications. Of course we need a crash analyzer tool that can track these crashes.
 
-A reporter that stores user actions step and runtime crashes info. You no longer need to change existing code, you just need to import our components in your js classes rather than `react-native`.
+## What is rn-crash-reporter?
 
-### Following are some components which can be used from our library:
+This is a reporter that stores user action steps and runtime crashes info that you can analyze on [Crash Viewer](https://github.com/sytango-technologies/rn-crash-viewer) with a detailed specification of the tracked crashes.  You no longer need to change existing code, you just need to import `rn-crash-reporter` components in your js classes rather than `react-native`.
+
+
+### Version Supports
+
+Version 2.0.0 supports react-native >= 0.52.0
+
+
+### Installation
+
+`$ yarn rn-crash-reporter` or `npm install --save react-native-node`
+
+
+## To analyze your app crashes, you should follow Node server and Web client installation [here](https://github.com/sytango-technologies/rn-crash-viewer)
+
+### NOTE: Please follow the [link here](FLOW_README.md) for the complete installation guide of `rn-crash-viewer`.
+
+
+## Example:
+
+The example app `RNCrashExamples` demonstrated the use of our crash reporter library. It is also having some additional features i.e. [`Eslint`](https://www.themarketingtechnologist.co/eslint-with-airbnb-javascript-style-guide-in-webstorm/), [`Code-Push`](https://github.com/Microsoft/react-native-code-push), [`React-Navigation`](https://reactnavigation.org/) and [`Redux`](https://redux.js.org/) are integrated. 
+
+
+### The components which can be used:
 - Button
 - TouchableOpacity
 - TouchableHeighlight
 - TouchableWithoutFeedback
 - TouchableNativeFeedback
-- SRNViewTouchableHeighlight
-- SRNView
-
-Version 2.0.0 supports react-native >= 0.52.0
-
-## Add it to your project
-
-### Installation
-
-Install Systango bug reporter by running the following command from within your app's root directory:
-- $  `yarn rn-crash-reporter`
-
-
-### You should follow Node server and Web client installation to track the crashes  [here](https://github.com/sytango-technologies/rn-crash-viewer)
-
-### NOTE: Please follow the [link here](FLOW_README.md) for the complete implementation of `rn-crash-viewer`.
-
-## Additional Features into our `RNCrashExamples` project :
-
-We have already integrated `Eslint` , `react-native-code-push`, `react-navigation` into our `RNCrashExamples` project.
-You can use the following reference :
-- `Eslint` : Follow the link [here](https://www.themarketingtechnologist.co/eslint-with-airbnb-javascript-style-guide-in-webstorm/).
-- `Code Push` : Follow the link [here](https://github.com/Microsoft/react-native-code-push).
-- `react-navigation` : Follow the link [here](https://reactnavigation.org/).
 
 ## Basic usage
 
@@ -46,8 +44,8 @@ First of all, you'll need to add following code in your `app.js` or any top hier
 import { CrashReporter } from 'rn-crash-reporter'
 
 CrashReporter.setConfiguration({
-    hostURL: 'http://localhost:8000', // Replace this URL with your Server base url, in my case I have setup the node server on my machine itself using docker container
-    enableReporter: true  // pass false here if you don't want to enable reporting the crashes
+hostURL: 'http://localhost:8000', // Replace this URL with your Server base url, in my case I have setup the node server on my machine itself using docker container
+enableReporter: true  // pass false here if you don't want to enable reporting the crashes
 });
 
 ```
@@ -63,7 +61,7 @@ import {Button} from 'rn-crash-reporter';
 
 // Within your render function
 <Button style={styles.button} onPress={()=> this.pressLogin()} classRef={this.constructor.name}>
-    LOG IN
+LOG IN
 </Button>
 
 // Adding your styles...
@@ -86,34 +84,7 @@ NOTE : Following are some additional props which might be used to pass manual in
 - searchText : To get the searched text on the `TextInput` component.(NOTE : While using `TextInput` component, you need to pass the `text` value in this field)
 - actionOn : To associate extra information related to the component used.
 
-## Additional component
 
-You can also use the `SRNView` component to capture `onPress` event on your custom cell of `ListView` component like following code:
-
-```javascript
-
-// Import the SRNView 'rn-crash-reporter' module
-import {SRNView} from 'rn-crash-reporter';
-
-
-// Within your render function
-<ListView
-dataSource = {this.state.dataSource}
-renderRow = {this.renderRow.bind(this)}
-enableEmptySections={true}>
-</ListView>
-
-// Within your component with renderRow function
-
-renderRow(rowData:any, sectionID: number, rowID: number){
-
-return (
-<SRNView style={styles.ListViewBG} onPress={()=> this.pressRowItem(rowData, sectionID, rowID)}  actionOn={rowData.anyKey}>
-<Your_CustomCell  data={rowData}/>
-</SRNView>
-)
-}
-```
 ## License
 
-License is MIT
+MIT
