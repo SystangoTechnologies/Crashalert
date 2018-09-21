@@ -8,10 +8,13 @@ As a mobile app developer, you’ve likely faced your own unique challenges in d
 This is a reporter that stores user action steps and runtime crashes info that you can analyze on [Crash Viewer](https://github.com/sytango-technologies/rn-crash-viewer) with a detailed specification of the tracked crashes.  You no longer need to change existing code, you just need to import `rn-crash-reporter` components in your js classes rather than `react-native`.
 
 
-### Version Supports
+### Supported Versions 
 
 Version 2.0.0 supports react-native >= 0.52.0
 
+### Platforms
+
+`rn-crash-reporter` supports both the platforms `android` and `iOS`.
 
 ### Installation
 
