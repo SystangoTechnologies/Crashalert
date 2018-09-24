@@ -17,7 +17,7 @@
     "redux-catch": "latest",
     "redux-form": "latest",
     "redux-thunk": "latest",
-    "rn-crash-reporter": "^1.1.0"
+    "rn-crash-reporter": "^2.0.0"
   },
   "devDependencies": {
     "babel-eslint": "8.2.6",

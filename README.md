@@ -75,6 +75,7 @@ width:100
 
 The example app `RNCrashExamples` demonstrated the use of our crash reporter library. It is also having some additional features i.e. [`Eslint`](https://www.themarketingtechnologist.co/eslint-with-airbnb-javascript-style-guide-in-webstorm/), [`Code-Push`](https://github.com/Microsoft/react-native-code-push), [`React-Navigation`](https://reactnavigation.org/) and [`Redux`](https://redux.js.org/) are integrated. 
 
+NOTE : On `android` platform you need to replace the value of  `hostURL` in `setConfiguration` method to your **local IP Address**.  
 
 ### The components which can be used:
 - Button

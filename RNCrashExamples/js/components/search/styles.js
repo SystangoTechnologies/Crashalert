@@ -81,6 +81,7 @@ module.exports = StyleSheet.create({
       justifyContent:'center',
       alignItems:'center',
       width:100,
+      marginRight: 5
   },
 
 

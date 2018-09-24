@@ -70,7 +70,7 @@ bytes received
           <Button style={[styles.btn, { width: this.state.width - 70 }]} classRef={this.constructor.name} onPress={() => this.setState({ syncMessage: 'Step 1 clicked' })}>
                 To record step 1, Click here!
           </Button>
-          <Button style={[styles.btn, { width: this.state.width - 70 }]} classRef={this.constructor.name} onPress={() => this.setState({ syncMessage: 'Step 2 clicked' })} searchText="2912">
+          <Button style={[styles.btn, { width: this.state.width - 70 }]} classRef={this.constructor.name} onPress={() => this.setState({ syncMessage: 'Step 2 clicked' })}>
                 To record step 2, Click here!
           </Button>
           <TouchableHighlight
@@ -191,7 +191,7 @@ bytes received
 
   divideCrash() {
     txt = 'a';
-    while (1) {
+    while (random) {
       txt = txt += 'a'; // add as much as the browser can handle
     }
   }

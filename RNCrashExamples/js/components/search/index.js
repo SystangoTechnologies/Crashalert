@@ -26,8 +26,6 @@ class Search extends Component {
   constructor(props) {
     super(props);
 
-    _this = this;
-
     //* > Setup state
     this.initialStateSetup();
 
@@ -141,6 +139,7 @@ class Search extends Component {
       <Button
         isBorder={false}
         transparent
+        classRef={this.constructor.name}
         onPress={() => this.handleBackPress()}
         style={{ marginLeft: 10, width: 50, alignItems: 'center', justifyContent: 'center', height: (Platform.OS === 'android') ? 50 : 64 }}
       >

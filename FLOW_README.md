@@ -23,8 +23,10 @@ NOTE : Please ensure that the docker container is already running(by the command
 ### Following steps to be followed for the Web client installation : 
 - Open the browser and type this URL  `http://localhost:8000/` in URL locator and hit enter to open the Web Client App. Please follow the[(Screenshot)](WebClient.png). (NOTE : You can also edit the port no in `docker-compose.yml` file in the web section.)
 - You can login the app using the following credentials :
-        Username : admin@example.com
-        Password : password
+        
+**Username** : admin@example.com
+**Password** : password
+
 - On the home page, you can check the error logs recorded. Please follow the[(Screenshot)](Error_Logs.png).
 
 ### You can also perform the addtional operations on the web app as follows :
