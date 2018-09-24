@@ -8,21 +8,14 @@ import React, { Component } from 'react';
 import {
   Platform, Dimensions, Image, View, ListView, Text, TextInput, FlatList
 } from 'react-native';
-import {
-  Container
-} from 'native-base';
-import { SRNView, Button, SQLiteManager } from 'rn-crash-reporter';
+import { Button, SQLiteManager } from 'rn-crash-reporter';
 
 import { bindActionCreators } from 'redux';
 import * as authActions from '../../actions/user';
 import * as fetchRoute from '../../actions/route';
 import { connect } from 'react-redux';
 import styles from './styles';
-import myTheme from '../../themes/base-theme';
 
-import SearchCell from './SearchCell';
-
-let _this;
 let ds;
 let playerArray = [];
 
@@ -83,7 +76,6 @@ class Search extends Component {
 
   render() {
     return (
-      <Container theme={myTheme}>
         <View style={[styles.container, { width: this.state.width, height: this.state.height }]}>
            <Image
              source={require('../../../assets/home/navigationBG.png')}
@@ -103,17 +95,6 @@ class Search extends Component {
              <Text style={{ color: '#fff', backgroundColor: 'transparent' }}>Search</Text>
            </View>
            </View>
-             
-           {/* <Content keyboardShouldPersistTaps style={[styles.container, { marginTop: 10 }]} scrollEnabled={!this.props.isFetching}>
-             <ListView
-             dataSource={this.state.dataSource}
-             renderRow={this.renderRow.bind(this)}
-             enableEmptySections
-           />
-           </Content> */}
-
-           
-         </View>
           <View style ={styles.textInputContainer}>
               <TextInput 
                       style={styles.TextInputStyleClass}
@@ -130,9 +111,8 @@ class Search extends Component {
                   data={(!this.state.isSearchPressed)?this.state.data:this.state.searchedData}
                   extraData={this.state}
                   renderItem={(rowData) => this._renderItem(rowData.item)}
-              />
-
-      </Container>
+          />
+        </View>
     );
   }
 
@@ -148,14 +128,6 @@ class Search extends Component {
       width: Dimensions.get('window').width,
       height: Dimensions.get('window').height
     };
-  }
-
-  renderRow(rowData:any, sectionID: number, rowID: number) {
-    return (
-      <SRNView style={styles.ListViewBG} onPress={() => this.pressRowItem(rowData, sectionID, rowID)} actionOn={rowData.Crash_Point.error_msg}>
-        <SearchCell width={this.state.width} height={this.state.height} crashData={rowData} />
-      </SRNView>
-    );
   }
 
   pressRowItem(rowData) {

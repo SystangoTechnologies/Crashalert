@@ -17,17 +17,17 @@
     "redux-catch": "latest",
     "redux-form": "latest",
     "redux-thunk": "latest",
-    "rn-crash-reporter": "latest"
+    "rn-crash-reporter": "^1.1.0"
   },
   "devDependencies": {
     "babel-eslint": "8.2.6",
+    "babel-jest": "23.4.2",
+    "babel-preset-react-native": "5",
     "eslint": "5.3.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "6.1.1",
     "eslint-plugin-react": "7.11.1",
-    "babel-jest": "23.4.2",
-    "babel-preset-react-native": "5",
     "jest": "23.5.0",
     "react-test-renderer": "16.4.1",
     "remote-redux-devtools": "0.5.5"

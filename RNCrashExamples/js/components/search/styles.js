@@ -3,12 +3,9 @@
 
 
 import { StyleSheet, Dimensions, PixelRatio } from 'react-native';
-import { getCorrectFontSizeForScreen } from '../../multiresolutionfont/multiResolution';
 
 var deviceHeight = Dimensions.get('window').height;
 var deviceWidth = Dimensions.get('window').width;
-
-var fontSize = getCorrectFontSizeForScreen(PixelRatio, deviceWidth,deviceHeight,19, 320, 640);
 
 module.exports = StyleSheet.create({
 
@@ -55,7 +52,7 @@ module.exports = StyleSheet.create({
     },
 
     title: {
-        fontSize: fontSize,
+        fontSize: 17,
         color: '#fff',
         marginLeft:5
     },

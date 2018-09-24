@@ -2,13 +2,7 @@
 'use strict';
 
 
-import { StyleSheet, Dimensions, PixelRatio } from 'react-native';
-import { getCorrectFontSizeForScreen } from '../../multiresolutionfont/multiResolution';
-
-var deviceHeight = Dimensions.get('window').height;
-var deviceWidth = Dimensions.get('window').width;
-
-var fontSize = getCorrectFontSizeForScreen(PixelRatio, deviceWidth,deviceHeight,19, 320, 640);
+import { StyleSheet, Dimensions } from 'react-native';
 
 module.exports = StyleSheet.create({
 

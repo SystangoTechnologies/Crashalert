@@ -6,9 +6,8 @@
 'use strict';
 
 import React, { Component } from 'react';
-import { StyleSheet, StatusBar, Text, Image, Dimensions } from 'react-native';
+import { View, StyleSheet, StatusBar, Text, Image, Dimensions } from 'react-native';
 import { replaceRoute } from '../../actions/route';
-import { View } from 'native-base';
 import { NavigationActions, StackActions } from 'react-navigation';
 
 import * as authActions from '../../actions/user'

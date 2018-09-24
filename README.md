@@ -18,25 +18,14 @@ Version 2.0.0 supports react-native >= 0.52.0
 
 ### Installation
 
-`$ yarn rn-crash-reporter` or `npm install --save react-native-node`
+`$ yarn rn-crash-reporter` or `npm install --save rn-crash-reporter`
 
 
-## To analyze your app crashes, you should follow Node server and Web client installation [here](https://github.com/sytango-technologies/rn-crash-viewer)
+## How to analyze the crashes?
 
-### NOTE: Please follow the [link here](FLOW_README.md) for the complete installation guide of `rn-crash-viewer`.
+To analyze your app crashes, you should follow Node server and Web client installation [here](https://github.com/sytango-technologies/rn-crash-viewer)
 
-
-## Example:
-
-The example app `RNCrashExamples` demonstrated the use of our crash reporter library. It is also having some additional features i.e. [`Eslint`](https://www.themarketingtechnologist.co/eslint-with-airbnb-javascript-style-guide-in-webstorm/), [`Code-Push`](https://github.com/Microsoft/react-native-code-push), [`React-Navigation`](https://reactnavigation.org/) and [`Redux`](https://redux.js.org/) are integrated. 
-
-
-### The components which can be used:
-- Button
-- TouchableOpacity
-- TouchableHeighlight
-- TouchableWithoutFeedback
-- TouchableNativeFeedback
+**NOTE:** Please follow the [link here](FLOW_README.md) for the complete installation guide of `rn-crash-viewer`.
 
 ## Basic usage
 
@@ -79,7 +68,20 @@ width:100
 
 });
 ```
-NOTE : Following are some additional props which might be used to pass manual information associated with the component otherwise the `default` information of the component will get passed.
+
+**NOTE :** Following are some additional props which might be used to pass manual information associated with the component otherwise the `default` information of the component will get passed.
+
+## Example:
+
+The example app `RNCrashExamples` demonstrated the use of our crash reporter library. It is also having some additional features i.e. [`Eslint`](https://www.themarketingtechnologist.co/eslint-with-airbnb-javascript-style-guide-in-webstorm/), [`Code-Push`](https://github.com/Microsoft/react-native-code-push), [`React-Navigation`](https://reactnavigation.org/) and [`Redux`](https://redux.js.org/) are integrated. 
+
+
+### The components which can be used:
+- Button
+- TouchableOpacity
+- TouchableHeighlight
+- TouchableWithoutFeedback
+- TouchableNativeFeedback
 
 ## Additional props
 
@@ -87,6 +89,16 @@ NOTE : Following are some additional props which might be used to pass manual in
 - searchText : To get the searched text on the `TextInput` component.(NOTE : While using `TextInput` component, you need to pass the `text` value in this field)
 - actionOn : To associate extra information related to the component used.
 
+
+## Known Issues
+
+If you experience the following issue in **android** while building the example app:
+
+`ENOENT: no such file or directory, open '/Users/macmini33/Desktop/demo/RNCrashExamples/android/app/build/intermediates/assets/debug/CodePushHash'`
+
+**Fix:** You need to create two (assets and debug) folders to the following path:
+
+`rootDir -> android -> app -> build -> intermediates -> assets -> debug`
 
 ## License
 

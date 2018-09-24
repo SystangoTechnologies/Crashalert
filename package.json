@@ -4,21 +4,26 @@
   "peerDependencies": {
     "react-native": ">=0.52.0"
   },
-  "version": "1.0.8",
+  "version": "1.1.3",
   "author": {
     "name": "Sytango Technologies",
     "email": "engineering@systango.com"
   },
   "description": "Library of react native components which allow reporting steps leading to an application crash",
   "keywords": [
-    "react-component",
-    "react-native",
-    "ios",
-    "android",
+    "crashlytics",
+    "react native crashlyzer",
+    "crash viewer",
+    "crashlyzer",
+    "issue reporter",
     "crash",
     "bug",
     "crash-report",
-    "crash reporter"
+    "crash reporter",
+    "react-component",
+    "react-native",
+    "ios",
+    "android"
   ],
   "license": "MIT",
   "main": "index.js",
