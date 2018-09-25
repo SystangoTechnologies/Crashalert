@@ -1,22 +1,22 @@
 
-# Following are the basic steps for the complete implementation of `rn-crash-viewer` :
+# Following are the basic steps for the complete implementation of `Crashlyzer` :
 
-- Node server Installation for `rn-crash-viewer`.
-- Web client Installation for `rn-crash-viewer`.
+- Node server Installation for `Crashlyzer`.
+- Web client Installation for `Crashlyzer`.
 - Setup of  `rn-crash-reporter` on app. Please follow the [link here](README.md)
 
-## Node server Installation for rn-crash-viewer
+## Node server Installation for Crashlyzer
 
 ### Following steps to be followed for the Node server installation using docker container:- 
 - Open your terminal and run the following command (assuming you have already installed the `brew`)
         $ `brew install docker docker-compose docker-machine xhyve docker-machine-driver-xhyve`
         $ `brew cask install docker`
 - Take clone or Download the zip file from the link [here](https://github.com/sytango-technologies/rn-crash-viewer).
-- Extract the zip source file and get into the root folder of `rn-crash-viewer` on the terminal.
+- Extract the zip source file and get into the root folder of `Crashlyzer` on the terminal.
 - Now run the command 
         $ `docker-compose up`
 
-## Web client Installation for rn-crash-viewer
+## Web client Installation for Crashlyzer
 
 NOTE : Please ensure that the docker container is already running(by the command `docker-compose up` ) and whenever you restarts your PC, you need to run the command `docker-compose up` to start your container. 
 

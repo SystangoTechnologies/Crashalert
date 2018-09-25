@@ -5,7 +5,7 @@ As a mobile app developer, you’ve likely faced your own unique challenges in d
 
 ## What is rn-crash-reporter?
 
-This is a reporter that stores user action steps and runtime crashes info that you can analyze on [Crash Viewer](https://github.com/sytango-technologies/rn-crash-viewer) with a detailed specification of the tracked crashes.  You no longer need to change existing code, you just need to import `rn-crash-reporter` components in your js classes rather than `react-native`.
+This is a reporter that stores user action steps and runtime crashes info that you can analyze on [Crashlyzer](https://github.com/sytango-technologies/rn-crash-viewer) with a detailed specification of the tracked crashes.  You no longer need to change existing code, you just need to import `rn-crash-reporter` components in your js classes rather than `react-native`.
 
 
 ### Supported Versions 
@@ -25,7 +25,7 @@ Version 2.0.0 supports react-native >= 0.52.0
 
 To analyze your app crashes, you should follow Node server and Web client installation [here](https://github.com/sytango-technologies/rn-crash-viewer)
 
-**NOTE:** Please follow the [link here](FLOW_README.md) for the complete installation guide of `rn-crash-viewer`.
+**NOTE:** Please follow the [link here](FLOW_README.md) for the complete installation guide of `Crashlyzer`.
 
 ## Basic usage
 
