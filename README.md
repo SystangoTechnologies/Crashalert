@@ -1,9 +1,9 @@
-# rn-crash-reporter
+# Crashalert
 
 
 As a mobile app developer, you’ve likely faced your own unique challenges in detecting, reproducing and debugging run-time crashes in React Native applications. Of course we need a crash analyzer tool that can track these crashes.
 
-## What is rn-crash-reporter?
+## What Crashalert?
 
 This is a reporter that stores user action steps and runtime crashes info that you can analyze on [Crashlyzer](https://github.com/sytango-technologies/rn-crash-viewer) with a detailed specification of the tracked crashes.  You no longer need to change existing code, you just need to import `rn-crash-reporter` components in your js classes rather than `react-native`.
 
