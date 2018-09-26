@@ -32,7 +32,6 @@ class Search extends Component {
     //* > Get error data
     const obj = new SQLiteManager();
     obj.getDeviceInfo((crashReport) => {
-      console.log('crashReport=', crashReport);
       playerArray = crashReport;
       this.setState({ dataSource: ds.cloneWithRows(playerArray) });
     });
@@ -101,7 +100,7 @@ class Search extends Component {
                       underlineColorAndroid='transparent'
                       placeholder="Search Here"
                   />
-              <Button style={[styles.btn]} classRef={this.constructor.name} onPress={() => this.searchFilterFunction(this.state.text)} searchText={this.state.text}>
+              <Button style={[styles.btn]} onPress={() => this.searchFilterFunction(this.state.text)} searchText={this.state.text}>
                   Search
               </Button>
           </View>
@@ -139,7 +138,6 @@ class Search extends Component {
       <Button
         isBorder={false}
         transparent
-        classRef={this.constructor.name}
         onPress={() => this.handleBackPress()}
         style={{ marginLeft: 10, width: 50, alignItems: 'center', justifyContent: 'center', height: (Platform.OS === 'android') ? 50 : 64 }}
       >

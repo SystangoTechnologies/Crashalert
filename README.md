@@ -52,7 +52,7 @@ You can simply try the following sample code :
 import {Button} from 'rn-crash-reporter';
 
 // Within your render function
-<Button style={styles.button} onPress={()=> this.pressLogin()} classRef={this.constructor.name}>
+<Button style={styles.button} onPress={()=> this.pressLogin()}>
 LOG IN
 </Button>
 
@@ -86,7 +86,6 @@ NOTE : On `android` platform you need to replace the value of  `hostURL` in `set
 
 ## Additional props
 
-- classRef : To get the current reference of class on which the components are wrapped.
 - searchText : To get the searched text on the `TextInput` component.(NOTE : While using `TextInput` component, you need to pass the `text` value in this field)
 - actionOn : To associate extra information related to the component used.
 

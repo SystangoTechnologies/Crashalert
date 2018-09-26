@@ -67,15 +67,14 @@ bytes received
           <Image source={require('../../../assets/home/user.png')} />
         </View>
         <View style={styles.container}>
-          <Button style={[styles.btn, { width: this.state.width - 70 }]} classRef={this.constructor.name} onPress={() => this.setState({ syncMessage: 'Step 1 clicked' })}>
+          <Button style={[styles.btn, { width: this.state.width - 70 }]} onPress={() => this.setState({ syncMessage: 'Step 1 clicked' })}>
                 To record step 1, Click here!
           </Button>
-          <Button style={[styles.btn, { width: this.state.width - 70 }]} classRef={this.constructor.name} onPress={() => this.setState({ syncMessage: 'Step 2 clicked' })}>
+          <Button style={[styles.btn, { width: this.state.width - 70 }]} onPress={() => this.setState({ syncMessage: 'Step 2 clicked' })}>
                 To record step 2, Click here!
           </Button>
           <TouchableHighlight
             style={[styles.btn, { width: this.state.width - 70 }]}
-            classRef={this.constructor.name}
             onPress={() => { throw new Error('Javascript error test successful!'); }
             }
           >
@@ -83,13 +82,12 @@ bytes received
           </TouchableHighlight>
           <TouchableOpacity
             style={[styles.btn, { width: this.state.width - 70 }]}
-            classRef={this.constructor.name}
             onPress={() => this.divideCrash()
             }
           >
             <Text> For Random Crash, Click Here! </Text>
           </TouchableOpacity>
-          <Button style={[styles.btn, { width: this.state.width - 70 }]} classRef={this.constructor.name} onPress={() => this.pressViewCrashReport()}>
+          <Button style={[styles.btn, { width: this.state.width - 70 }]} onPress={() => this.pressViewCrashReport()}>
                 Search
           </Button>
           <Text style={styles.messages}>{this.state.syncMessage || ''}</Text>
