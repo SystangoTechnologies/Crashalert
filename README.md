@@ -10,7 +10,7 @@ This is a reporter that stores user action steps and runtime crashes info that y
 
 ### Supported Versions 
 
-Version 2.0.2 supports react-native >= 0.52.0
+Version 2.0.5 supports react-native >= 0.52.0
 
 ### Platforms
 

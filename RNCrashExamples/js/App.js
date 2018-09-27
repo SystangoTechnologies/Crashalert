@@ -1,34 +1,29 @@
-
-'use strict';
-
 import React, { Component } from 'React';
 import { Provider, connect } from 'react-redux';
-import { configureStore, AppNavigator } from './configureStore'
-import { CrashReporter } from 'rn-crash-reporter'
+import { CrashReporter } from 'rn-crash-reporter';
+import { configureStore, AppNavigator } from './configureStore';
 
 export default class App extends Component {
+  componentWillMount() {
+    CrashReporter.setConfiguration({
+      hostURL: 'http://192.168.2.29:8000', // Replace this URL with your Server base url or IP address, in my case I have setup the node server using docker on my machine
+      enableReporter: true // pass false here if you don't want to enable crash reporting
+    });
+  }
 
-    componentWillMount(){
-
-        CrashReporter.setConfiguration({
-            hostURL: 'http://localhost:8000', // Replace this URL with your Server base url, in my case I have setup the node server using docker on my maching
-            enableReporter: true  // pass false here if you don't want to enable crash reporting
-        });
-    }
-
-    render() {
-        return (
-            <Provider store={configureStore}>
-                <AppWithNavigationState />
-            </Provider>
-        );
-    }
+  render() {
+    return (
+      <Provider store={configureStore}>
+        <AppWithNavigationState />
+      </Provider>
+    );
+  }
 }
 
-function mapStateToProps (state) {
-    return {
-      state: state.RootStackReducer
-    }
+function mapStateToProps(state) {
+  return {
+    state: state.RootStackReducer
+  };
 }
 
-const AppWithNavigationState = connect(mapStateToProps)(AppNavigator)
+const AppWithNavigationState = connect(mapStateToProps)(AppNavigator);
