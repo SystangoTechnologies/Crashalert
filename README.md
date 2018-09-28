@@ -44,6 +44,9 @@ enableReporter: true  // pass false here if you don't want to enable reporting t
 
 ```
 
+**NOTE:** In case `localhost` url is not working in any platform `android/iOS` then you need to replace the value of  `hostURL` to your machine's **local IP Address** in `setConfiguration` method.  
+
+
 ### Sample
 
 You can simply try the following sample code :
@@ -77,7 +80,6 @@ width:100
 
 The example app `RNCrashExamples` demonstrated the use of our crash reporter library. It is also having some additional features i.e. [`Eslint`](https://www.themarketingtechnologist.co/eslint-with-airbnb-javascript-style-guide-in-webstorm/), [`Code-Push`](https://github.com/Microsoft/react-native-code-push), [`React-Navigation`](https://reactnavigation.org/) and [`Redux`](https://redux.js.org/) are integrated. You need to add your code-push keys for android and iOS in their respective mapping files, you can follow the inline link of code-push for more details. The code-push is optional in the example app for debug mode.
 
-**NOTE:** In case `localhost` url is not working in any platform `android/iOS` then you need to replace the value of  `hostURL` to your machine's **local IP Address** in `setConfiguration` method.  
 
 ### The components which can be used:
 - Button
