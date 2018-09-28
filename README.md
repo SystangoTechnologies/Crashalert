@@ -21,7 +21,7 @@ Version 2.0.5 supports react-native >= 0.52.0
 `$ yarn rn-crash-reporter` or `npm install --save rn-crash-reporter`
 
 ## Demo
-<a href="https://github.com/SystangoTechnologies/Crashalert/Crashalert.gif"><img src="https://github.com/SystangoTechnologies/Crashalert/Crashalert.gif"></a>
+<a href="https://github.com/SystangoTechnologies/Crashalert/blob/master/Crashalert.gif"><img src="https://github.com/SystangoTechnologies/Crashalert/blob/master/Crashalert.gif"></a>
 
 ## How to analyze the crashes?
 
