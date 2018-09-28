@@ -90,7 +90,7 @@ NOTE : On `android` platform you need to replace the value of  `hostURL` in `set
 - actionOn : To associate extra information related to the component used.
 
 
-## Known Issues
+### Troubleshoot
 
 If you experience the following issue in **android** while building the example app:
 

@@ -24,8 +24,9 @@ NOTE : Please ensure that the docker container is already running(by the command
 - Open the browser and type this URL  `http://localhost:8000/` in URL locator and hit enter to open the Web Client App. Please follow the[(Screenshot)](WebClient.png). (NOTE : You can also edit the port no in `docker-compose.yml` file in the web section.)
 - You can login the app using the following credentials :
         
-**Username** : admin@example.com
-**Password** : password
+      **Username** : admin@example.com
+
+      **Password** : password
 
 - On the home page, you can check the error logs recorded. Please follow the[(Screenshot)](Error_Logs.png).
 
@@ -34,7 +35,15 @@ NOTE : Please ensure that the docker container is already running(by the command
 - You can mark the error is resolved on the Action panel. Please follow the[(Screenshot)](Reopen_Error.png).
 - You can also reopen the error on the Action panel. Please follow the[(Screenshot)](Resolved_Error.png).
 
+### Troubleshoot
+
+If you experience `Page not found or don't reach` issue on your browser to load our webclient even after docker container running then first terminate the terminal, opan again  and do the following from Crashlyzer root directory:
+        
+     $ `sudo docker-compose down`
+     $ `sudo docker-compose build`
+     $ `sudo docker-compose up`
+
 
 ## License
 
-License is MIT
+MIT
