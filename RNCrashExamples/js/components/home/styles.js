@@ -16,7 +16,7 @@ module.exports = StyleSheet.create({
       backgroundColor: '#59636C',
       alignItems: 'center',
       justifyContent:'center',
-      marginTop: 20
+      marginTop: 80
     },
     btn: {
         height:35,
@@ -33,6 +33,7 @@ module.exports = StyleSheet.create({
       messages: {
         marginTop: 30,
         textAlign: "center",
+        color:'white'
       },
       restartToggleButton: {
         color: "blue",
@@ -47,4 +48,8 @@ module.exports = StyleSheet.create({
         textAlign: "center",
         margin: 20
       },
+      text: {
+        color:'white',
+        fontSize: 16
+      }
 });

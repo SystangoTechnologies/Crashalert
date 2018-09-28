@@ -4981,6 +4981,13 @@ react-native-code-push@5.4.2:
     plist "3.0.1"
     xcode "1.0.0"
 
+react-native-crashalert@^2.0.6:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/react-native-crashalert/-/react-native-crashalert-2.0.6.tgz#8951feb9c4522cdbd476a6b245882b40059cdcd6"
+  dependencies:
+    react-native-device-info "^0.21.5"
+    react-native-sqlite-storage "^3.3.4"
+
 react-native-device-info@^0.21.5:
   version "0.21.5"
   resolved "https://registry.yarnpkg.com/react-native-device-info/-/react-native-device-info-0.21.5.tgz#99478a2d68182e012297f2d63f2bd1b788106dee"
@@ -5514,13 +5521,6 @@ rimraf@^2.2.8, rimraf@^2.5.4, rimraf@^2.6.1:
 rimraf@~2.2.6:
   version "2.2.8"
   resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.2.8.tgz#e439be2aaee327321952730f99a8929e4fc50582"
-
-rn-crash-reporter@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/rn-crash-reporter/-/rn-crash-reporter-2.0.2.tgz#c10363ca5667679db1d15a15b97038dacf86c275"
-  dependencies:
-    react-native-device-info "^0.21.5"
-    react-native-sqlite-storage "^3.3.4"
 
 rsvp@^3.3.3:
   version "3.6.2"
