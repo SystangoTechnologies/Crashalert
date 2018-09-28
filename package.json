@@ -1,10 +1,10 @@
 {
-  "name": "rn-crash-reporter",
+  "name": "react-native-crashalert",
   "optionalDependencies": {},
   "peerDependencies": {
     "react-native": ">=0.52.0"
   },
-  "version": "2.0.2",
+  "version": "2.0.7",
   "author": {
     "name": "Sytango Technologies",
     "email": "engineering@systango.com"
@@ -39,7 +39,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sytango-technologies/rn-crash-reporter"
+    "url": "git+https://github.com/SystangoTechnologies/Crashalert.git"
   },
-  "homepage": "https://github.com/sytango-technologies/rn-crash-reporter"
+  "homepage": "https://github.com/SystangoTechnologies/Crashalert"
 }

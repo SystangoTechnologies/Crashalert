@@ -3,29 +3,29 @@
 
 As a mobile app developer, you’ve likely faced your own unique challenges in detecting, reproducing and debugging run-time crashes in React Native applications. Of course we need a crash analyzer tool that can track these crashes.
 
-## What Crashalert?
+## What is Crashalert?
 
-This is a reporter that stores user action steps and runtime crashes info that you can analyze on [Crashlyzer](https://github.com/sytango-technologies/rn-crash-viewer) with a detailed specification of the tracked crashes.  You no longer need to change existing code, you just need to import `rn-crash-reporter` components in your js classes rather than `react-native`.
+This is a reporter that stores user action steps and runtime crashes info that you can analyze on [Crashlyzer](https://github.com/SystangoTechnologies/Crashlyzer) with a detailed specification of the tracked crashes.  You no longer need to change existing code, you just need to import `react-native-crashalert` components in your js classes rather than `react-native`.
 
 
 ### Supported Versions 
 
-Version 2.0.5 supports react-native >= 0.52.0
+Version 3.0.0 supports react-native >= 0.52.0
 
 ### Platforms
 
-`rn-crash-reporter` supports both the platforms `android` and `iOS`.
+`Crashalert` supports both the platforms `android` and `iOS`.
 
 ### Installation
 
-`$ yarn rn-crash-reporter` or `npm install --save rn-crash-reporter`
+`$ yarn react-native-crashalert` or `npm install --save react-native-crashalert`
 
 ## Demo
 <a href="https://github.com/SystangoTechnologies/Crashalert/blob/master/Crashalert.gif"><img src="https://github.com/SystangoTechnologies/Crashalert/blob/master/Crashalert.gif"></a>
 
 ## How to analyze the crashes?
 
-To analyze your app crashes, you should follow Node server and Web client installation [here](https://github.com/sytango-technologies/rn-crash-viewer)
+To analyze your app crashes, you should follow Node server and Web client installation [here](https://github.com/SystangoTechnologies/Crashlyzer)
 
 **NOTE:** Please follow the [link here](FLOW_README.md) for the complete installation guide of `Crashlyzer`.
 
@@ -35,7 +35,7 @@ First of all, you'll need to add following code in your `app.js` or any top hier
 
 ```javascript
 
-import { CrashReporter } from 'rn-crash-reporter'
+import { CrashReporter } from 'react-native-crashalert'
 
 CrashReporter.setConfiguration({
 hostURL: 'http://localhost:8000', // Replace this URL with your Server base url, in my case I have setup the node server on my machine itself using docker container
@@ -50,8 +50,8 @@ You can simply try the following sample code :
 
 ```javascript
 
-// Import the component 'rn-crash-reporter' module
-import {Button} from 'rn-crash-reporter';
+// Import the component 'react-native-crashalert' module
+import {Button} from 'react-native-crashalert';
 
 // Within your render function
 <Button style={styles.button} onPress={()=> this.pressLogin()}>
@@ -77,7 +77,7 @@ width:100
 
 The example app `RNCrashExamples` demonstrated the use of our crash reporter library. It is also having some additional features i.e. [`Eslint`](https://www.themarketingtechnologist.co/eslint-with-airbnb-javascript-style-guide-in-webstorm/), [`Code-Push`](https://github.com/Microsoft/react-native-code-push), [`React-Navigation`](https://reactnavigation.org/) and [`Redux`](https://redux.js.org/) are integrated. 
 
-NOTE : On `android` platform you need to replace the value of  `hostURL` in `setConfiguration` method to your **local IP Address**.  
+**NOTE:** In case `localhost` url is not working in any `android/iOS` platforms then you need to replace the value of  `hostURL` to your machine's **local IP Address** in `setConfiguration` method.  
 
 ### The components which can be used:
 - Button
@@ -105,3 +105,6 @@ If you experience the following issue in **android** while building the example 
 ## License
 
 MIT
+
+## Contributors
+[Arpit Khandelwal](https://www.linkedin.com/in/arpitkhandelwal1984/), [Akhilesh Mourya](https://www.linkedin.com/in/akhilesh-mourya-54705232/), [Rituraj Mandloi](https://www.linkedin.com/in/rituraj-mandloi-57b97a171/)

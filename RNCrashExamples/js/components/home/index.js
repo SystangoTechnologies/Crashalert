@@ -8,7 +8,7 @@ import {
 } from 'react-native';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { Button, TouchableHighlight, TouchableOpacity } from 'rn-crash-reporter';
+import { Button, TouchableHighlight, TouchableOpacity } from 'react-native-crashalert';
 import CodePush from 'react-native-code-push';
 import * as fetchRoute from '../../actions/route';
 import * as authActions from '../../actions/user';

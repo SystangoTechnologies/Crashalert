@@ -1,6 +1,6 @@
 import React, { Component } from 'React';
 import { Provider, connect } from 'react-redux';
-import { CrashReporter } from 'rn-crash-reporter';
+import { CrashReporter } from 'react-native-crashalert';
 import { configureStore, AppNavigator } from './configureStore';
 
 export default class App extends Component {

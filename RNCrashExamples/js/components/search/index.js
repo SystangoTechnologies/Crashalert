@@ -8,7 +8,7 @@ import React, { Component } from 'react';
 import {
   Platform, Dimensions, Image, View, ListView, Text, TextInput, FlatList
 } from 'react-native';
-import { Button, SQLiteManager } from 'rn-crash-reporter';
+import { Button, SQLiteManager } from 'react-native-crashalert';
 
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';

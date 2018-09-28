@@ -3,7 +3,7 @@
 
 - Node server Installation for `Crashlyzer`.
 - Web client Installation for `Crashlyzer`.
-- Setup of  `rn-crash-reporter` on app. Please follow the [link here](README.md)
+- Setup of  `react-native-crashalert` on app. Please follow the [link here](README.md)
 
 ## Node server Installation for Crashlyzer
 
@@ -11,7 +11,7 @@
 - Open your terminal and run the following command (assuming you have already installed the `brew`)
         $ `brew install docker docker-compose docker-machine xhyve docker-machine-driver-xhyve`
         $ `brew cask install docker`
-- Take clone or Download the zip file from the link [here](https://github.com/sytango-technologies/rn-crash-viewer).
+- Take clone or Download the zip file from the link [here](https://github.com/SystangoTechnologies/Crashlyzer).
 - Extract the zip source file and get into the root folder of `Crashlyzer` on the terminal.
 - Now run the command 
         $ `docker-compose up`
@@ -24,9 +24,8 @@ NOTE : Please ensure that the docker container is already running(by the command
 - Open the browser and type this URL  `http://localhost:8000/` in URL locator and hit enter to open the Web Client App. Please follow the[(Screenshot)](WebClient.png). (NOTE : You can also edit the port no in `docker-compose.yml` file in the web section.)
 - You can login the app using the following credentials :
         
-      **Username** : admin@example.com
-
-      **Password** : password
+    **Username** : admin@example.com
+    **Password** : password
 
 - On the home page, you can check the error logs recorded. Please follow the[(Screenshot)](Error_Logs.png).
 

@@ -35,7 +35,7 @@ class SplashPage extends Component {
         <View style={styles.background}>
           <StatusBar hidden={true} />
             <Image style={[styles.imageBackground, this.getCurrentWidthHeight()]} resizeMode= 'stretch' source={require('../../../assets/logo/bg.png')} />
-            <Text style={styles.textLbl}>Crash Reporter</Text>
+            <Text style={styles.textLbl}>Crashalert</Text>
             <View style={styles.bottomTextLbl}>
                 <Text style={styles.textLbl}>Powered by Systango</Text>
             </View>
